@@ -63,7 +63,6 @@ namespace PDollarGestureRecognizer
 				{
 					virtualKeyPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane);
 					_virtualKeyPositionLocalToPlayer = player.transform.InverseTransformPoint(Camera.main.ScreenToWorldPoint(virtualKeyPosition));
-
 				}
 			}
 
