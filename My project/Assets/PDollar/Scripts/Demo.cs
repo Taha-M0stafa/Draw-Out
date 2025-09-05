@@ -110,7 +110,7 @@ namespace PDollarGestureRecognizer
 
 		void OnGUI()
 		{
-			if (Input.GetMouseButtonUp(0)) //Mouse is released
+			if (Input.GetKeyDown(KeyCode.K)) //Mouse is released
 			{
 				recogniseGesture();
 			}
