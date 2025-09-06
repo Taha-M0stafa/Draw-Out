@@ -16332,6 +16332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 425240489}
   - component: {fileID: 425240488}
+  - component: {fileID: 425240490}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -16374,6 +16375,28 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &425240490
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 425240487}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7031729604421ce4994c2ce19bdcb2de, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  LevelNames:
+  - hall
+  - Lshapedroom
+  - Moonlightdance
+  - skybatlle
+  Player: {fileID: 9176843206681061102, guid: 8927078c817765f419dfe0b03c1494ae, type: 3}
+  Portalspawnpoint: {fileID: 0}
+  Portal: {fileID: 7090566815365682424, guid: 78bae8d434bc32248bc3fd6ef2293b85, type: 3}
+  PlayerSpawnpoint: {fileID: 0}
+  Enemycount: 2
 --- !u!1 &491461638
 GameObject:
   m_ObjectHideFlags: 0
@@ -20825,7 +20848,7 @@ GameObject:
   - component: {fileID: 1334979607}
   m_Layer: 0
   m_Name: PlayerSpwan
-  m_TagString: Untagged
+  m_TagString: PlayerSpawnpoint
   m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24597,7 +24620,7 @@ TilemapCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -24635,7 +24658,7 @@ CompositeCollider2D:
   m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
-    m_Bits: 0
+    m_Bits: 4294967295
   m_ExcludeLayers:
     serializedVersion: 2
     m_Bits: 0

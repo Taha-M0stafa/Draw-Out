@@ -7,10 +7,11 @@ public class Gamemanager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public static Gamemanager instance;
     [SerializeField] string[] LevelNames;
-
+     [SerializeField] GameObject Player;
     public GameObject Portalspawnpoint;
     [SerializeField] GameObject Portal;
-    public int Enemycount; 
+    public GameObject PlayerSpawnpoint;
+    public int Enemycount;      
 
 
     void OnSceneloaded(Scene scene, LoadSceneMode mode)
@@ -18,7 +19,9 @@ public class Gamemanager : MonoBehaviour
 
 
         Getportalspawnpoint();
-        GetEnemycount();
+        //GetEnemycount();
+        GetPLayerSpawnpoint();
+        Instantiate(Player, PlayerSpawnpoint.transform.position, Quaternion.identity);
     }
     private void Awake()
     {
@@ -73,10 +76,14 @@ public class Gamemanager : MonoBehaviour
     {
         Portalspawnpoint = GameObject.FindGameObjectWithTag("Portalspawnpoint");
     }
-    void GetEnemycount()
+    void GetPLayerSpawnpoint()
+    {
+        PlayerSpawnpoint = GameObject.FindGameObjectWithTag("PlayerSpawnpoint");
+    }
+   /* void GetEnemycount()
     {
         Enemycount = GameObject.FindGameObjectsWithTag("Enemy").Length;
-    }
+    }*/
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneloaded;
