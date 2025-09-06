@@ -80,7 +80,7 @@ public class meleeEnemies : MonoBehaviour
     {
         rotateLeftAndRight();
 
-        if (Vector3.Distance(transform.position, player.transform.position) > 0.2f)
+        if (Vector3.Distance(transform.position, player.transform.position) > 1f)
         {
             Vector3 direction = (player.transform.position - transform.position).normalized;
             moveDirection = direction * (SPEED * Time.deltaTime);
