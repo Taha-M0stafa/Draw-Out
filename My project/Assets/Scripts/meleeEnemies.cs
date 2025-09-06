@@ -1,4 +1,6 @@
+using System;
 using Unity.VisualScripting;
+using UnityEditor;
 using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
@@ -21,24 +23,25 @@ public class meleeEnemies : MonoBehaviour
     private STATE state = STATE.IDLE;
     private Animator m_Animator;
     private CharacterController m_CharacterController;
+    private Rigidbody rb;
     
     private Vector3 moveDirection = Vector3.zero;
     private bool isMoving = true;
-    private const float SPEED = 6f;
+    private const float SPEED = 100f;
     
     private GameObject player;
     private int layer = 3;
     private int layerMask;
 
-    
+    public MonoScript attackScript;
     
     void Start()
     {
         layerMask = 1 << layer;
         m_Animator = GetComponent<Animator>();
-        m_CharacterController = gameObject.AddComponent(typeof (CharacterController)) as CharacterController;
-        m_CharacterController.skinWidth = 0.01f;
-        m_CharacterController.excludeLayers = layerMask;
+
+        rb = GetComponent<Rigidbody>();
+        rb.excludeLayers = layerMask;
         
         player =  GameObject.FindGameObjectWithTag("Player");
     }
@@ -68,7 +71,10 @@ public class meleeEnemies : MonoBehaviour
                 break;
             case STATE.ATTACKING:
                 isAttacking = true;
-                m_Animator.SetBool("isAttacking", isAttacking);
+                m_Animator.SetTrigger("attack");
+                break;
+            case STATE.IDLE:
+                m_Animator.ResetTrigger("attack");
                 break;
             default:
                 break;
@@ -80,17 +86,13 @@ public class meleeEnemies : MonoBehaviour
     {
         rotateLeftAndRight();
 
-        if (Vector3.Distance(transform.position, player.transform.position) > 1f)
+        if (Vector3.Distance(transform.position, player.transform.position) > 1.3f)
         {
             Vector3 direction = (player.transform.position - transform.position).normalized;
             moveDirection = direction * (SPEED * Time.deltaTime);
             
             changeStates(STATE.MOVING);
-            m_CharacterController.Move(moveDirection);
-        }
-        else
-        {
-            changeStates(STATE.ATTACKING);
+            rb.linearVelocity = moveDirection;
         }
     }
 
@@ -108,5 +110,29 @@ public class meleeEnemies : MonoBehaviour
 
         transform.rotation = newRotation;
     }
-    
+
+    void attackFunction()
+    {
+        changeStates(STATE.ATTACKING);
+    }
+
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        Debug.Log("collided");
+        if (other.CompareTag("Player"))
+        {
+            Debug.Log("haha  noob attacked ez");
+            attackFunction();
+        }
+    }
+
+    private void OnCollisionEnter2D(Collision2D other)
+    {
+        Debug.Log("collided");
+        if (other.gameObject.CompareTag("Player"))
+        {
+            Debug.Log("haha  noob attacked ez");
+            attackFunction();
+        }
+    }
 }
