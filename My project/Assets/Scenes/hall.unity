@@ -16291,6 +16291,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &338395587
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 338395588}
+  m_Layer: 0
+  m_Name: Portalspawn
+  m_TagString: Portalspawnpoint
+  m_Icon: {fileID: 4422084297763085224, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &338395588
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 338395587}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -17, y: -8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &425240487
 GameObject:
   m_ObjectHideFlags: 0
@@ -16325,6 +16356,9 @@ MonoBehaviour:
   - Lshapedroom
   - Moonlightdance
   - skybatlle
+  Portalspawnpoint: {fileID: 0}
+  Portal: {fileID: 7090566815365682424, guid: 78bae8d434bc32248bc3fd6ef2293b85, type: 3}
+  Enemycount: 0
 --- !u!4 &425240489
 Transform:
   m_ObjectHideFlags: 0
@@ -16334,7 +16368,7 @@ Transform:
   m_GameObject: {fileID: 425240487}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: -1.96, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -20780,6 +20814,37 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!1 &1334979606
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1334979607}
+  m_Layer: 0
+  m_Name: PlayerSpwan
+  m_TagString: Untagged
+  m_Icon: {fileID: 3443629218296621865, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1334979607
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1334979606}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -21.83, y: 10.62, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1937763850
 GameObject:
   m_ObjectHideFlags: 0
@@ -24728,3 +24793,5 @@ SceneRoots:
   - {fileID: 1937763853}
   - {fileID: 555560230}
   - {fileID: 425240489}
+  - {fileID: 1334979607}
+  - {fileID: 338395588}
