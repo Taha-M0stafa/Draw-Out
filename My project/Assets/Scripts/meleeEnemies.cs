@@ -16,6 +16,7 @@ public class meleeEnemies : MonoBehaviour
 
     private float health = 10f;
     private float damage = 1f;
+    private bool isAttacking = false;
     
     private STATE state = STATE.IDLE;
     private Animator m_Animator;
@@ -51,22 +52,45 @@ public class meleeEnemies : MonoBehaviour
     void changeStates(STATE newState)
     {
         state = newState;
+        setAnimationState(newState);
     }
 
+    void setAnimationState(STATE newState)
+    {
+        isMoving = false;
+        isAttacking = false;
+        
+        switch (newState)
+        {
+            case STATE.MOVING:
+                isMoving = true;
+                m_Animator.SetBool("isMoving", isMoving);
+                break;
+            case STATE.ATTACKING:
+                isAttacking = true;
+                m_Animator.SetBool("isAttacking", isAttacking);
+                break;
+            default:
+                break;
+        }
+    }
+    
+    
     void movementFunction()
     {
         rotateLeftAndRight();
 
-        if (Vector3.Distance(transform.position, player.transform.position) > 0.1f)
+        if (Vector3.Distance(transform.position, player.transform.position) > 0.2f)
         {
             Vector3 direction = (player.transform.position - transform.position).normalized;
             moveDirection = direction * (SPEED * Time.deltaTime);
             
             changeStates(STATE.MOVING);
-            isMoving = true;
-
-            m_Animator.SetBool("isMoving", true);
             m_CharacterController.Move(moveDirection);
+        }
+        else
+        {
+            changeStates(STATE.ATTACKING);
         }
     }
 
