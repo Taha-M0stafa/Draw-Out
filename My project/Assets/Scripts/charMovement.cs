@@ -11,8 +11,10 @@ public class charMovement : MonoBehaviour
     private const float SPEED = 200f;
     private const float SPRINT_FACTOR = 10f;
 
-    private Rigidbody rb;
     
+    
+    private Rigidbody2D rb;
+    private Animator m_Animator;
     
     private bool _canDash = true;
     private bool _isDashing = false;
@@ -23,7 +25,8 @@ public class charMovement : MonoBehaviour
 
     void Start()
     {
-        rb = GetComponent<Rigidbody>();   
+        rb = GetComponent<Rigidbody2D>();   
+        m_Animator = GetComponent<Animator>();
         moveAction = InputSystem.actions.FindAction("Move");
     }
 
@@ -39,19 +42,26 @@ public class charMovement : MonoBehaviour
         bool isSprinting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
         if (!_isDashing)
         {
+            
+            if (moveValue != Vector2.zero)
+            {
+                m_Animator.SetBool("isMoving", true);
+                dashDirection = moveValue;
+            }
+            else
+            {
+                m_Animator.SetBool("isMoving", false);
+            }
+            
             if (isSprinting)
             {
+                m_Animator.SetBool("isRunning", true);
                 rb.linearVelocity = moveValue * (SPEED * Time.deltaTime * SPRINT_FACTOR);
             }
             else
             {
+                m_Animator.SetBool("isRunning", false);
                 rb.linearVelocity = moveValue * (Time.deltaTime * SPEED);
-            }
-
-            
-            if (moveValue != Vector2.zero)
-            {
-                dashDirection = moveValue;
             }
             
             if (Input.GetKeyDown(KeyCode.Space) && _canDash)

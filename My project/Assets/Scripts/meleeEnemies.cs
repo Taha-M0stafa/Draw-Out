@@ -23,7 +23,7 @@ public class meleeEnemies : MonoBehaviour
     private STATE state = STATE.IDLE;
     private Animator m_Animator;
     private CharacterController m_CharacterController;
-    private Rigidbody rb;
+    private Rigidbody2D rb;
     
     private Vector3 moveDirection = Vector3.zero;
     private bool isMoving = true;
@@ -40,7 +40,7 @@ public class meleeEnemies : MonoBehaviour
         layerMask = 1 << layer;
         m_Animator = GetComponent<Animator>();
 
-        rb = GetComponent<Rigidbody>();
+        rb = GetComponent<Rigidbody2D>();
         rb.excludeLayers = layerMask;
         
         player =  GameObject.FindGameObjectWithTag("Player");
@@ -118,21 +118,12 @@ public class meleeEnemies : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Debug.Log("collided");
+        
         if (other.CompareTag("Player"))
         {
             Debug.Log("haha  noob attacked ez");
             attackFunction();
         }
     }
-
-    private void OnCollisionEnter2D(Collision2D other)
-    {
-        Debug.Log("collided");
-        if (other.gameObject.CompareTag("Player"))
-        {
-            Debug.Log("haha  noob attacked ez");
-            attackFunction();
-        }
-    }
+    
 }
