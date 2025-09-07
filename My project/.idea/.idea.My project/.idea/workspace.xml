@@ -4,39 +4,62 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="d6a2fed0-e080-4cf8-afd4-b5216dbc969f" name="Changes" comment="" />
+    <list default="true" id="d6a2fed0-e080-4cf8-afd4-b5216dbc969f" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (31).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (31).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (36).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (36).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (44).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (44).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scripts/Demo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PDollar/Scripts/Demo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/charMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/charMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs.meta" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DpaMonitoringSettings">
+    <option name="firstShow" value="false" />
+  </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$/.." value="Tilemaps" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d538cd2ab03641b2bea3e2d4a386a62e35000/49/628cc3d7/Animator.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
   <component name="ProjectColorInfo">{
-  &quot;customColor&quot;: &quot;&quot;,
-  &quot;associatedIndex&quot;: 7
+  &quot;associatedIndex&quot;: 8
 }</component>
-  <component name="ProjectId" id="327FiREt7DfgL5Xgp8j8M8GD47T" />
+  <component name="ProjectId" id="32KiafIgb5ljGM0lrVhqs6oKCcJ" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "git-widget-placeholder": "main",
-    "ignore.virus.scanning.warn.message": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Attach to Unity Editor.Attach to Unity Editor &amp; Play.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Unity Editor.Attach to Unity Editor.executor&quot;: &quot;Debug&quot;,
+    &quot;Attach to Unity Player.Unity.exe (My project).executor&quot;: &quot;Debug&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Enemies&quot;,
+    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\UNITY\6000.1.14f1\Editor\Unity.exe" />
@@ -93,16 +116,31 @@
     <configuration name="Attach to Device" type="UnityDevicePlayer" factoryName="UnityAttachToDevicePlayer">
       <method v="2" />
     </configuration>
+    <configuration name="Unity.exe (My project)" type="UnityPlayer" factoryName="UnityAttachToPlayer" temporary="true">
+      <option name="host" value="127.0.0.1" />
+      <option name="pid" value="19768" />
+      <option name="playerId" value="Editor(Unity.exe-My project)" />
+      <option name="playerInstanceId" value="My project" />
+      <option name="port" value="56768" />
+      <option name="projectName" value="My project" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Attach to Unity Player.Unity.exe (My project)" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
       <changelist id="d6a2fed0-e080-4cf8-afd4-b5216dbc969f" name="Changes" comment="" />
-      <created>1756763839335</created>
+      <created>1757175731181</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1756763839335</updated>
-      <workItem from="1756763843205" duration="4039000" />
-      <workItem from="1757102262473" duration="679000" />
+      <updated>1757175731181</updated>
+      <workItem from="1757175733581" duration="9649000" />
+      <workItem from="1757197180484" duration="5004000" />
+      <workItem from="1757245192913" duration="9671000" />
     </task>
     <servers />
   </component>
@@ -116,6 +154,29 @@
     <option name="unityProjectFolder" value="true" />
   </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="main" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsManagerConfiguration">
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
   </component>
