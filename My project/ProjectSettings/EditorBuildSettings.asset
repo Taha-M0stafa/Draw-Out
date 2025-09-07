@@ -8,6 +8,18 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity
     guid: 8c9cfa26abfee488c85f1582747f6a02
+  - enabled: 1
+    path: Assets/Scenes/hall.unity
+    guid: 3994949b4372cd84e92de85e3f944a82
+  - enabled: 1
+    path: Assets/Scenes/Moonlightdance.unity
+    guid: c37f76a11f2570b45b27c9017dc06c48
+  - enabled: 1
+    path: Assets/Scenes/Lshapedroom.unity
+    guid: 51690da16de6e2e40a310111a12829e6
+  - enabled: 1
+    path: Assets/Scenes/skybatlle.unity
+    guid: 2cda990e2423bbf4892e6590ba056729
   m_configObjects:
     com.unity.input.settings.actions: {fileID: -944628639613478452, guid: 2bcd2660ca9b64942af0de543d8d7100, type: 3}
   m_UseUCBPForAssetBundles: 0

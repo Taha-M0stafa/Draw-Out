@@ -6,6 +6,7 @@ TagManager:
   tags:
   - Portalspawnpoint
   - PlayerSpawnpoint
+  - Enemyspawnpoint
   layers:
   - Default
   - TransparentFX
@@ -42,6 +43,9 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: line
+    uniqueID: 3481467157
     locked: 0
   m_RenderingLayers:
   - Default

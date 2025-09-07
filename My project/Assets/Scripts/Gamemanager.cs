@@ -12,7 +12,7 @@ public class Gamemanager : MonoBehaviour
     [SerializeField] GameObject Portal;
     public GameObject PlayerSpawnpoint;
     public int Enemycount;      
-
+      private bool Hasnoenemy=false;
 
     void OnSceneloaded(Scene scene, LoadSceneMode mode)
     {
@@ -22,6 +22,8 @@ public class Gamemanager : MonoBehaviour
         //GetEnemycount();
         GetPLayerSpawnpoint();
         Instantiate(Player, PlayerSpawnpoint.transform.position, Quaternion.identity);
+        Hasnoenemy = false;
+        Enemycount = 2;
     }
     private void Awake()
     {
@@ -32,11 +34,13 @@ public class Gamemanager : MonoBehaviour
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
+
         }
         else
-        {
-            Destroy(gameObject);
-        }
+            {
+                Destroy(gameObject);
+            }
+      
     }
 
     public void Loadlevel()
@@ -47,11 +51,13 @@ public class Gamemanager : MonoBehaviour
         {
             Randomlevel = Random.Range(0, LevelNames.Length);
             Nextlevel = LevelNames[Randomlevel];
+            Debug.Log("Same level");
 
 
 
         }
         SceneManager.LoadScene(Nextlevel);
+        Debug.Log("Next level is " + Nextlevel);
     }
 
     void Start()
@@ -62,15 +68,20 @@ public class Gamemanager : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-
+            EnemyDied();
     }
     public void EnemyDied()
     {
-        Enemycount--;
-        if (Enemycount <= 0)
+      
+        if (Enemycount <= 0 && !Hasnoenemy)
         {
-            Instantiate(Portal, Portalspawnpoint.transform.position, Quaternion.identity);
+            Hasnoenemy = true;
+             Instantiate(Portal, Portalspawnpoint.transform.position, Quaternion.identity);
+            
         }
+        
+           
+        
     }
     void Getportalspawnpoint()
     {
