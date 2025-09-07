@@ -31,7 +31,7 @@ public class playerHealth : MonoBehaviour
     {
         if (health <= 0)
         {
-            Debug.Log("GameOver");
+            
         }
     }
     
