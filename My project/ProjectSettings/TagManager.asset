@@ -4,13 +4,14 @@
 TagManager:
   serializedVersion: 3
   tags:
+  - Enemy
   - Portalspawnpoint
   - PlayerSpawnpoint
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - enemy
   - Water
   - UI
   - 

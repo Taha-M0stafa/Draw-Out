@@ -79,7 +79,6 @@ namespace PDollarGestureRecognizer
 
 						foreach (LineRenderer lineRenderer in gestureLinesRenderer)
 						{
-
 							lineRenderer.positionCount = 0;
 							Destroy(lineRenderer.gameObject);
 						}
@@ -109,7 +108,7 @@ namespace PDollarGestureRecognizer
 
 		void OnGUI()
 		{
-			if (Input.GetKeyDown(KeyCode.K)) //Mouse is released
+			if (Input.GetMouseButtonUp(0)) //Mouse is released
 			{
 				recogniseGesture();
 			}
@@ -122,8 +121,8 @@ namespace PDollarGestureRecognizer
 			Gesture candidate = new Gesture(points.ToArray());
 			Result gestureResult = PointCloudRecognizer.Classify(candidate, trainingSet.ToArray());
 
-			message = gestureResult.GestureClass + " " + gestureResult.Score;
-			Debug.Log(message);
+			message = gestureResult.GestureClass;
+			player.GetComponent<spellAttacks>().PickSpell(message);
 		}
 
 		void addGestureToFile()

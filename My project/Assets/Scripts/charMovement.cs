@@ -6,12 +6,14 @@ using System.Collections;
 public class charMovement : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private CharacterController controller;
-    private InputAction moveAction;
-    private InputAction jumpAction;
-    private const float SPEED = 10f;
-    private const float SPRINT_FACTOR = 2f;
 
+    private InputAction moveAction;
+    private const float SPEED = 200f;
+    private const float SPRINT_FACTOR = 10f;
+    
+    private Rigidbody2D rb;
+    private Animator m_Animator;
+    
     private bool _canDash = true;
     private bool _isDashing = false;
     public float dashTime = 1f;
@@ -21,32 +23,43 @@ public class charMovement : MonoBehaviour
 
     void Start()
     {
-        controller = GetComponent<CharacterController>();
+        rb = GetComponent<Rigidbody2D>();   
+        m_Animator = GetComponent<Animator>();
         moveAction = InputSystem.actions.FindAction("Move");
-        jumpAction = InputSystem.actions.FindAction("Jump");
     }
 
     // Update is called once per frame
     void Update()
     {
-        Vector2 moveValue = moveAction.ReadValue<Vector2>();
-        bool isSprinting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
+        
+    }
 
+    private void FixedUpdate()
+    {
+        Vector2 moveValue = moveAction.ReadValue<Vector2>().normalized;
+        bool isSprinting = Input.GetKey(KeyCode.LeftShift) || Input.GetKey(KeyCode.RightShift);
         if (!_isDashing)
         {
-            if (isSprinting)
-            {
-                controller.Move(moveValue * (SPEED * Time.deltaTime * SPRINT_FACTOR));
-            }
-            else
-            {
-                controller.Move(moveValue * (Time.deltaTime * SPEED));
-            }
-
             
             if (moveValue != Vector2.zero)
             {
+                m_Animator.SetBool("isMoving", true);
                 dashDirection = moveValue;
+            }
+            else
+            {
+                m_Animator.SetBool("isMoving", false);
+            }
+            
+            if (isSprinting)
+            {
+                m_Animator.SetBool("isRunning", true);
+                rb.linearVelocity = moveValue * (SPEED * Time.deltaTime * SPRINT_FACTOR);
+            }
+            else
+            {
+                m_Animator.SetBool("isRunning", false);
+                rb.linearVelocity = moveValue * (Time.deltaTime * SPEED);
             }
             
             if (Input.GetKeyDown(KeyCode.Space) && _canDash)
@@ -67,7 +80,7 @@ public class charMovement : MonoBehaviour
         _isDashing = true;
         while (Time.time < startTime + dashTime)
         {
-            controller.Move(moveValue * (dashPower * Time.deltaTime));
+            rb.linearVelocity = moveValue * (dashPower * Time.deltaTime);
             Debug.Log("Dashing!");
             yield return null;
         }

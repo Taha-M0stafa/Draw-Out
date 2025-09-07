@@ -82,8 +82,13 @@ public class Gamemanager : MonoBehaviour
     }
    /* void GetEnemycount()
     {
+<<<<<<< HEAD:My project/Assets/Scripts/Gamemanager.cs
         Enemycount = GameObject.FindGameObjectsWithTag("Enemy").Length;
     }*/
+=======
+//        Enemycount = GameObject.FindGameObjectsWithTag("Enemy").Length;
+    }
+>>>>>>> main:My project/Assets/Resources/Scripts/Gamemanager.cs
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneloaded;
