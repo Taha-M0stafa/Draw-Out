@@ -75,7 +75,7 @@ public class Gamemanager : MonoBehaviour
     }
     void GetEnemycount()
     {
-        Enemycount = GameObject.FindGameObjectsWithTag("Enemy").Length;
+//        Enemycount = GameObject.FindGameObjectsWithTag("Enemy").Length;
     }
     private void OnEnable()
     {
