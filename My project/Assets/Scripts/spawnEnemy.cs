@@ -4,26 +4,44 @@ public class spawnEnemy : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public GameObject[] enemeyPrefabs;
-
-    private float delay = 2f;
+    public GameObject spawnLocation;
+    private int enemiesSpawned = 0;
+    
+    private float delay = 0f;
     private float spawnInterval = 3f;
-    void Start()
+    void Awake()
     {
+        
+    }
+    
+    public void InvokeSpawnEnemy()
+    {
+        spawnLocation =  GameObject.FindGameObjectWithTag("Enemyspawnpoint");
         InvokeRepeating("spawnRandomEnemy", delay, spawnInterval);
     }
 
+    public void stopInvoking()
+    {
+        CancelInvoke();
+    }
+    
+    
     // Update is called once per frame
     void Update()
     {
-        
+        if (enemiesSpawned >= 4)
+        {
+            CancelInvoke();
+            enemiesSpawned = 0;
+        }
     }
 
     void spawnRandomEnemy()
     {
         int randomEnemyIndex =  Random.Range(0, enemeyPrefabs.Length);
         GameObject obj = enemeyPrefabs[randomEnemyIndex];
-        GameObject clone = Instantiate(obj , transform.position, transform.rotation) as GameObject;
-        clone.AddComponent(typeof(meleeEnemies));
+        GameObject clone = Instantiate(obj , spawnLocation.transform.position, spawnLocation.transform.rotation) as GameObject;
         clone.layer = LayerMask.NameToLayer("enemy");
+        enemiesSpawned += 1;
     }
 }

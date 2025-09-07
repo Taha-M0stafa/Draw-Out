@@ -14,7 +14,7 @@ public class MainMenu : MonoBehaviour
     }
     public void OnStartGamePress()
     {
-        SceneManager.LoadScene("SampleScene");
+        SceneManager.LoadScene("hall");
     }
     public void OnSettingsPress()
     {

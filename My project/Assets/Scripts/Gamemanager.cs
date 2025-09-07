@@ -1,3 +1,4 @@
+using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
 using UnityEngine.SceneManagement;
@@ -7,40 +8,40 @@ public class Gamemanager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public static Gamemanager instance;
     [SerializeField] string[] LevelNames;
-     [SerializeField] GameObject Player;
+    [SerializeField] GameObject Player;
     public GameObject Portalspawnpoint;
+    public GameObject enemySpawner;
     [SerializeField] GameObject Portal;
     public GameObject PlayerSpawnpoint;
     public int Enemycount;      
       private bool Hasnoenemy=false;
-
+      private bool portal_spawned = false;
+      GameObject port;
     void OnSceneloaded(Scene scene, LoadSceneMode mode)
     {
-
-
         Getportalspawnpoint();
+        port = null;
+        portal_spawned = false;
         //GetEnemycount();
         GetPLayerSpawnpoint();
         Instantiate(Player, PlayerSpawnpoint.transform.position, Quaternion.identity);
+        enemySpawner.GetComponent<spawnEnemy>().InvokeSpawnEnemy();
+        Instantiate(enemySpawner, transform.position, Quaternion.identity);
+        enemySpawner.GetComponent<spawnEnemy>().InvokeSpawnEnemy();  
         Hasnoenemy = false;
-        Enemycount = 2;
     }
+
     private void Awake()
     {
-
-
-
         if (instance == null)
         {
             instance = this;
             DontDestroyOnLoad(gameObject);
-
         }
         else
-            {
-                Destroy(gameObject);
-            }
-      
+        {
+            Destroy(gameObject);
+        }
     }
 
     public void Loadlevel()
@@ -52,9 +53,6 @@ public class Gamemanager : MonoBehaviour
             Randomlevel = Random.Range(0, LevelNames.Length);
             Nextlevel = LevelNames[Randomlevel];
             Debug.Log("Same level");
-
-
-
         }
         SceneManager.LoadScene(Nextlevel);
         Debug.Log("Next level is " + Nextlevel);
@@ -67,21 +65,36 @@ public class Gamemanager : MonoBehaviour
 
     // Update is called once per frame
     void Update()
-    {
-            EnemyDied();
+    { 
+        EnemyDied();
+        GetEnemycount();
+        if (Enemycount >= 4)
+        {
+            enemySpawner.GetComponent<spawnEnemy>().stopInvoking();
+        }
     }
     public void EnemyDied()
     {
-      
-        if (Enemycount <= 0 && !Hasnoenemy)
+        
+        if (portal_spawned == false)
         {
-            Hasnoenemy = true;
-             Instantiate(Portal, Portalspawnpoint.transform.position, Quaternion.identity);
-            
+             port = Instantiate(Portal, Portalspawnpoint.transform.position, Quaternion.identity);
+             portal_spawned = true;
         }
-        
-           
-        
+
+        if (port != null)
+        {
+            if (Enemycount <= 0 && !Hasnoenemy)
+            {
+                Hasnoenemy = true;
+                port.SetActive(true);
+            }
+            else if(Enemycount > 0 )
+            {
+                Hasnoenemy = false;
+                port.SetActive(false);
+            }
+        }
     }
     void Getportalspawnpoint()
     {
@@ -91,15 +104,10 @@ public class Gamemanager : MonoBehaviour
     {
         PlayerSpawnpoint = GameObject.FindGameObjectWithTag("PlayerSpawnpoint");
     }
-   /* void GetEnemycount()
+    void GetEnemycount()
     {
-<<<<<<< HEAD:My project/Assets/Scripts/Gamemanager.cs
         Enemycount = GameObject.FindGameObjectsWithTag("Enemy").Length;
-    }*/
-=======
-//        Enemycount = GameObject.FindGameObjectsWithTag("Enemy").Length;
     }
->>>>>>> main:My project/Assets/Resources/Scripts/Gamemanager.cs
     private void OnEnable()
     {
         SceneManager.sceneLoaded += OnSceneloaded;
@@ -109,4 +117,6 @@ public class Gamemanager : MonoBehaviour
         SceneManager.sceneLoaded -= OnSceneloaded;
     }
 
+    
+    
 }

@@ -45,22 +45,26 @@ public class charMovement : MonoBehaviour
             {
                 m_Animator.SetBool("isMoving", true);
                 dashDirection = moveValue;
+                
+                if (isSprinting)
+                {
+                    m_Animator.SetBool("isRunning", true);
+                    rb.linearVelocity = moveValue * (SPEED * Time.deltaTime);
+                }
+                else
+                {
+                    m_Animator.SetBool("isRunning", false);
+                    rb.linearVelocity = moveValue * (Time.deltaTime * SPEED);
+                }
+                
             }
             else
             {
                 m_Animator.SetBool("isMoving", false);
+                rb.linearVelocity = Vector2.zero;
             }
             
-            if (isSprinting)
-            {
-                m_Animator.SetBool("isRunning", true);
-                rb.linearVelocity = moveValue * (SPEED * Time.deltaTime * SPRINT_FACTOR);
-            }
-            else
-            {
-                m_Animator.SetBool("isRunning", false);
-                rb.linearVelocity = moveValue * (Time.deltaTime * SPEED);
-            }
+           
             
             if (Input.GetKeyDown(KeyCode.Space) && _canDash)
             {

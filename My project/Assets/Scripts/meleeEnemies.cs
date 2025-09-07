@@ -1,7 +1,6 @@
 using System;
 using Unity.VisualScripting;
 using UnityEditor;
-using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 
 public class meleeEnemies : MonoBehaviour
@@ -27,7 +26,7 @@ public class meleeEnemies : MonoBehaviour
     
     private Vector3 moveDirection = Vector3.zero;
     private bool isMoving = true;
-    private const float SPEED = 300f;
+    private const float SPEED = 150f;
     
     private GameObject player;
     private playerHealth  playerHealth;

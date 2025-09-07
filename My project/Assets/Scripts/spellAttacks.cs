@@ -48,12 +48,12 @@ public class spellAttacks : MonoBehaviour
     void CircleAttack()
     {
         updateEnemeyCount();
-        float pushBackValue = 4f;
+        float pushBackValue = 1.3f;
         foreach (GameObject enemy in enemies )
         {
             if(enemy.transform.position.x > transform.position.x)
             {
-                enemy.transform.Translate(enemy.transform.position.x + pushBackValue, 0, 0);
+                enemy.transform.Translate(enemy.transform.position.x + pushBackValue, 0, 0);    
             }
             else
             {

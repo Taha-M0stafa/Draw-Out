@@ -75,7 +75,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 2
   m_Sprite: {fileID: 1751039737, guid: 0c1e734fa85636743af3bc22c6d99ba8, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -97,6 +97,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3226765396728414338}
   - component: {fileID: 3018374437291293498}
+  - component: {fileID: 527091001192029489}
   - component: {fileID: 8076638449566523537}
   - component: {fileID: 3449665719398039264}
   m_Layer: 3
@@ -144,6 +145,19 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &527091001192029489
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3226765396728414341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2e176a8092646aa4085568f7def95ab1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  damagedParticleEffect: {fileID: 5728588738625074713, guid: 2d0fdea959c8de343931fbe9a5ba4cd4, type: 3}
 --- !u!70 &8076638449566523537
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -203,8 +217,8 @@ Rigidbody2D:
     m_Bits: 0
   m_ExcludeLayers:
     serializedVersion: 2
-    m_Bits: 8
+    m_Bits: 0
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
