@@ -3,9 +3,12 @@ using UnityEngine.InputSystem.Android;
 
 public class LevelTrigger : MonoBehaviour
 {
-    void OnTriggerEnter(Collider other)
+   void OnTriggerEnter2D(Collider2D collision)
     {
-        Gamemanager.instance.Invoke("Loadlevel", 2f);
+        if (collision.CompareTag("Player"))
+        {Debug.Log("Player entered the portal");
+        Gamemanager.instance.Loadlevel();
+        }
     }
     void Start()
     {
