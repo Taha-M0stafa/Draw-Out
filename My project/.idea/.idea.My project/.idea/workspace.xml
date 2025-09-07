@@ -7,10 +7,13 @@
     <list default="true" id="d6a2fed0-e080-4cf8-afd4-b5216dbc969f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (31).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (31).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (33).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (33).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (36).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (36).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (44).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (44).prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scripts/Demo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PDollar/Scripts/Demo.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/charMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/charMovement.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs.meta" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,7 +139,8 @@
       <option name="presentableId" value="Default" />
       <updated>1757175731181</updated>
       <workItem from="1757175733581" duration="9649000" />
-      <workItem from="1757197180484" duration="3787000" />
+      <workItem from="1757197180484" duration="5004000" />
+      <workItem from="1757245192913" duration="9671000" />
     </task>
     <servers />
   </component>

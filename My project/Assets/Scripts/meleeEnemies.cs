@@ -22,18 +22,19 @@ public class meleeEnemies : MonoBehaviour
     
     private STATE state = STATE.IDLE;
     private Animator m_Animator;
-    private CharacterController m_CharacterController;
     private Rigidbody2D rb;
+    
     
     private Vector3 moveDirection = Vector3.zero;
     private bool isMoving = true;
-    private const float SPEED = 100f;
+    private const float SPEED = 300f;
     
     private GameObject player;
+    private playerHealth  playerHealth;
+    public ParticleSystem damagedParticleEffect;
+    
     private int layer = 3;
     private int layerMask;
-
-    public MonoScript attackScript;
     
     void Start()
     {
@@ -44,12 +45,18 @@ public class meleeEnemies : MonoBehaviour
         rb.excludeLayers = layerMask;
         
         player =  GameObject.FindGameObjectWithTag("Player");
+        playerHealth = player.GetComponent<playerHealth>();
     }
 
     // Update is called once per frame
     void Update()
     {
         movementFunction();
+
+        if (health <= 0)
+        {
+            Die();
+        }
     }
 
     void changeStates(STATE newState)
@@ -73,9 +80,6 @@ public class meleeEnemies : MonoBehaviour
                 isAttacking = true;
                 m_Animator.SetTrigger("attack");
                 break;
-            case STATE.IDLE:
-                m_Animator.ResetTrigger("attack");
-                break;
             default:
                 break;
         }
@@ -86,7 +90,7 @@ public class meleeEnemies : MonoBehaviour
     {
         rotateLeftAndRight();
 
-        if (Vector3.Distance(transform.position, player.transform.position) > 1.3f)
+        if (Vector3.Distance(transform.position, player.transform.position) > 0.5f)
         {
             Vector3 direction = (player.transform.position - transform.position).normalized;
             moveDirection = direction * (SPEED * Time.deltaTime);
@@ -94,6 +98,7 @@ public class meleeEnemies : MonoBehaviour
             changeStates(STATE.MOVING);
             rb.linearVelocity = moveDirection;
         }
+        
     }
 
     void rotateLeftAndRight()
@@ -114,16 +119,34 @@ public class meleeEnemies : MonoBehaviour
     void attackFunction()
     {
         changeStates(STATE.ATTACKING);
+        playerHealth.setHealth(playerHealth.getHealth() - damage);
+        damagedParticleEffect.GetComponent<particleScript>().DamagedParticleEffect(player.transform);
     }
+
+
+    
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        
         if (other.CompareTag("Player"))
         {
-            Debug.Log("haha  noob attacked ez");
             attackFunction();
         }
+    }
+
+    public float getHealth()
+    {
+        return health;
+    }
+
+    public void setHealth(float health)
+    {
+        this.health = health;
+    }
+
+    private void Die()
+    {
+        Destroy(this.gameObject);
     }
     
 }

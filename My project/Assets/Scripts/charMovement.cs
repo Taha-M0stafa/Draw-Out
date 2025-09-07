@@ -10,8 +10,6 @@ public class charMovement : MonoBehaviour
     private InputAction moveAction;
     private const float SPEED = 200f;
     private const float SPRINT_FACTOR = 10f;
-
-    
     
     private Rigidbody2D rb;
     private Animator m_Animator;
