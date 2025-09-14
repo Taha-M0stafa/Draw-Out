@@ -1,69 +1,104 @@
+using System;
+using System.Collections;
 using UnityEngine;
 
-public class spellAttacks : MonoBehaviour
+namespace spellSystem
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    private GameObject[] enemies;
-    public ParticleSystem ps;
-    private float spellDamage;
-    
-    
-    void Start()
+    public class spellAttacks : MonoBehaviour
     {
+        // Start is called once before the first execution of Update after the MonoBehaviour is created
+        public ParticleSystem ps;
+        private float cooldown = 3f;
+        private float spellDamage;
+
+        public GameObject fireBall;
         
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
         
-    }
-
-
-    public void PickSpell(string spellName)
-    {
-        switch (spellName)
+        private int enemyLayerMask = 1<< 3;
+        
+        void Start()
         {
-            case "five point star":
-                FiveStarAttack();
-                break;
-            case "Circle":
-                CircleAttack();
-                break;
+            
         }
-    }
-    
-    void FiveStarAttack()
-    {
-        updateEnemeyCount();
-        spellDamage = 2f;
-        foreach (GameObject enemy in enemies)
-        {
-            meleeEnemies healthValue = enemy.GetComponent<meleeEnemies>();
-            healthValue.setHealth(healthValue.getHealth()-spellDamage);
-            ps.GetComponent<particleScript>().DamagedParticleEffect(enemy.transform);
-        }
-    }
 
-    void CircleAttack()
-    {
-        updateEnemeyCount();
-        float pushBackValue = 1.3f;
-        foreach (GameObject enemy in enemies )
+        // Update is called once per frame
+        void Update()
         {
-            if(enemy.transform.position.x > transform.position.x)
+
+        }
+
+
+        public void PickSpell(string spellName)
+        {
+            switch (spellName)
             {
-                enemy.transform.Translate(enemy.transform.position.x + pushBackValue, 0, 0);    
-            }
-            else
-            {
-                enemy.transform.Translate(enemy.transform.position.x-pushBackValue, 0, 0);
+                case "five point star":
+                    FiveStarAttack();
+                    break;
+                case "Circle":
+                    CircleAttack();
+                    break;
+                case "Rectangle":
+                    break;
+                case "Triangle":
+                    TriangleAttack();
+                    break;
             }
         }
-    }
 
-    private void updateEnemeyCount()
-    {
-        enemies = GameObject.FindGameObjectsWithTag("Enemy");
+        void FiveStarAttack()
+        {
+            spellDamage = 3f;
+            float sphereRadius = 12f;
+            Collider2D[] enemeyStats = Physics2D.OverlapCircleAll(transform.position, sphereRadius, enemyLayerMask);
+            if (enemeyStats.Length > 0)
+            {
+                foreach (Collider2D enemy in enemeyStats)
+                {
+                    meleeEnemies enemyStat = enemy.gameObject.GetComponent<meleeEnemies>();
+                    enemyStat.setHealth(enemyStat.getHealth() - spellDamage);
+                    ps.GetComponent<particleScript>().DamagedParticleEffect(enemyStat.gameObject.transform);
+                }
+            }
+        }
+
+        void CircleAttack()
+        {
+            float sphereRadius = 8f;
+           Collider2D[] enemeyStats = Physics2D.OverlapCircleAll(transform.position, sphereRadius, enemyLayerMask);
+           if (enemeyStats.Length > 0)
+           {
+               foreach (Collider2D enemy in enemeyStats)
+               {
+                   meleeEnemies enemyStat = enemy.gameObject.GetComponent<meleeEnemies>();
+                   StartCoroutine(freezeCoroutine(1f, enemyStat));
+               }
+           }
+        }
+
+        private void TriangleAttack()
+        {
+            var fireballClone = Instantiate(fireBall, transform.position, Quaternion.Euler(new Vector3(0, 1 ,0)));
+        }
+        
+        private void RectangleAttack()
+        {
+            
+        }
+        
+        private IEnumerator freezeCoroutine(float duration, meleeEnemies target)
+        {
+            float elapsedTime = 0;
+            target.setCanMove(false);
+            while (elapsedTime < duration)
+            {
+                target.getRb().linearVelocity = Vector2.zero;
+                elapsedTime += Time.deltaTime;
+                yield return null;
+            }
+            target.setCanMove(true);
+        }
+
+       
     }
 }

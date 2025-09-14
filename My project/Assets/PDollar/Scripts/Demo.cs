@@ -3,14 +3,16 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.IO;
+using spellSystem;
 
 namespace PDollarGestureRecognizer
 {
 	public class Demo : MonoBehaviour
 	{
+
 		public Transform gestureOnScreenPrefab;
 		public GameObject player;
-		
+
 		private List<Gesture> trainingSet = new List<Gesture>();
 
 		private List<Point> points = new List<Point>();
@@ -50,20 +52,12 @@ namespace PDollarGestureRecognizer
 		void Update()
 		{
 
-			if (platform == RuntimePlatform.Android || platform == RuntimePlatform.IPhonePlayer)
+			if (Input.GetMouseButton(0))
 			{
-				if (Input.touchCount > 0)
-				{
-					virtualKeyPosition = new Vector3(Input.GetTouch(0).position.x, Input.GetTouch(0).position.y);
-				}
-			}
-			else
-			{
-				if (Input.GetMouseButton(0))
-				{
-					virtualKeyPosition = new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane);
-					_virtualKeyPositionLocalToPlayer = player.transform.InverseTransformPoint(Camera.main.ScreenToWorldPoint(virtualKeyPosition));
-				}
+				virtualKeyPosition =
+					new Vector3(Input.mousePosition.x, Input.mousePosition.y, Camera.main.nearClipPlane);
+				_virtualKeyPositionLocalToPlayer =
+					player.transform.InverseTransformPoint(Camera.main.ScreenToWorldPoint(virtualKeyPosition));
 			}
 
 			if (drawArea.Contains(virtualKeyPosition))
@@ -88,31 +82,40 @@ namespace PDollarGestureRecognizer
 
 					++strokeId;
 
-					Transform tmpGesture = Instantiate(gestureOnScreenPrefab,player.transform) as Transform;
+					Transform tmpGesture = Instantiate(gestureOnScreenPrefab, player.transform) as Transform;
 					currentGestureLineRenderer = tmpGesture.GetComponent<LineRenderer>();
 
 					gestureLinesRenderer.Add(currentGestureLineRenderer);
 
 					vertexCount = 0;
 				}
-				
+
 				if (Input.GetMouseButton(0))
 				{
-					points.Add(new Point(_virtualKeyPositionLocalToPlayer.x, -_virtualKeyPositionLocalToPlayer.y, strokeId));
+					points.Add(new Point(_virtualKeyPositionLocalToPlayer.x, -_virtualKeyPositionLocalToPlayer.y,
+						strokeId));
 					currentGestureLineRenderer.positionCount = ++vertexCount;
-					Vector3 drawPoint =  _virtualKeyPositionLocalToPlayer;
+					Vector3 drawPoint = _virtualKeyPositionLocalToPlayer;
 					currentGestureLineRenderer.SetPosition(vertexCount - 1, drawPoint);
 				}
+				
+				if (Input.GetKeyDown(KeyCode.L)) //Mouse is released
+				{
+					if (times_called == 0)
+					{
+						times_called = 1;
+						recogniseGesture();
+					}
+				}
+				
 			}
 		}
-
+		
+		int times_called = 0;
 		void OnGUI()
 		{
-			if (Input.GetMouseButtonUp(0)) //Mouse is released
-			{
-				recogniseGesture();
-			}
-			addGestureToFile();
+			
+			
 		}
 
 		void recogniseGesture()
@@ -122,7 +125,9 @@ namespace PDollarGestureRecognizer
 			Result gestureResult = PointCloudRecognizer.Classify(candidate, trainingSet.ToArray());
 
 			message = gestureResult.GestureClass;
+			Debug.Log(message);
 			player.GetComponent<spellAttacks>().PickSpell(message);
+			times_called = 0;
 		}
 
 		void addGestureToFile()
@@ -132,7 +137,8 @@ namespace PDollarGestureRecognizer
 
 			if (GUI.Button(new Rect(Screen.width - 50, 150, 50, 30), "Add") && points.Count > 0 && newGestureName != "")
 			{
-				string fileName = String.Format("{0}/{1}-{2}.xml", Application.persistentDataPath, newGestureName, DateTime.Now.ToFileTime());
+				string fileName = String.Format("{0}/{1}-{2}.xml", Application.persistentDataPath, newGestureName,
+					DateTime.Now.ToFileTime());
 
 #if !UNITY_WEBPLAYER
 				GestureIO.WriteGesture(points.ToArray(), newGestureName, fileName);

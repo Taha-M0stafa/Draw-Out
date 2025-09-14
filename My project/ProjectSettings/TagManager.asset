@@ -8,6 +8,9 @@ TagManager:
   - Portalspawnpoint
   - PlayerSpawnpoint
   - Enemyspawnpoint
+  - Brush
+  - playerHitBox
+  - Fireball
   layers:
   - Default
   - TransparentFX

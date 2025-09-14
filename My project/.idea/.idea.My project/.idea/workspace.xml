@@ -7,38 +7,39 @@
     <list default="true" id="d6a2fed0-e080-4cf8-afd4-b5216dbc969f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (31).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (31).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (33).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (33).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (36).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (36).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (44).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (44).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Particles/damagedParticleEffect.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Particles/damagedParticleEffect.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/art hall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tiles/art hall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lshapedroom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lshapedroom.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Moonlightdance.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Moonlightdance.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scene.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scene/Demo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scene/Demo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scene/DemoSettings.lighting" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scene/DemoSettings.lighting.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scripts/Demo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PDollar/Scripts/Demo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel art Menu package (5 sets)/round color/ pin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel art Menu package (5 sets)/round color/ pin.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Idle.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/forward-walk-anim-ezgif.com-optipng.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/forward-walk-anim-ezgif.com-optipng.png.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Player/walking_anim.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/walking_anim.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/RPGW_Caves/Scenes.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/RPGW_Caves/Scenes/Demo.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/RPGW_Caves/Scenes/Demo.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/RPGW_Caves/Scenes/sky___pixel_art_by_freak_ops_demqf5b-fullview.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/RPGW_Caves/Scenes/sky___pixel_art_by_freak_ops_demqf5b-fullview.jpg.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI Scenes/hall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Scenes/hall.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/skybatlle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/skybatlle.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gamemanager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gamemanager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LevelTrigger.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LevelTrigger.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/charMovement.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/charMovement.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI Scenes/Main Menu V01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Scenes/Main Menu V01.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/charMovement.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/charMovement.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/followPlayer.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/followPlayer.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/spawnEnemy.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/spawnEnemy.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerHealth.cs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerHealth.cs.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/spellAttacks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/spellAttacks.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/Lit2DSceneTemplate.scenetemplate" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Lit2DSceneTemplate.scenetemplate" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/UniversalRP.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Anton SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Bangers SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Electronic Highway Sign SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Oswald Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Examples &amp; Extras/Resources/Fonts &amp; Materials/Roboto-Bold SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Fonts/JazzCreate/JazzCreateBubble SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Fonts/JazzCreate/JazzCreateBubble SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Fonts/Pixelify_Sans/PixelifySans-VariableFont_wght SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Fonts/Pixelify_Sans/PixelifySans-VariableFont_wght SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Scripts/Credits.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Scripts/Credits.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Scripts/MainMenu.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Scripts/MainMenu.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Scripts/UiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Scripts/UiManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UniversalRenderPipelineGlobalSettings.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/ProjectSettings.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -57,9 +58,26 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2cebce6db8b34c6cabb849a9c012f5e43e400/5c/030a3006/Graph.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4ae50e093b6e42d3b4ec42b8ca793dac46ae00/7d/bcdaab63/Array.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4ae50e093b6e42d3b4ec42b8ca793dac46ae00/d9/be65c38a/List`1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5073738c7a0c40f6874835e59c0cfe789e5600/2e/31f66496/EditorCompilationInterface.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5073738c7a0c40f6874835e59c0cfe789e5600/90/9348eb31/EditorApplication.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9d2f564c4eed4a90bb0e96c187775d6e9000/8b/7ab27fa3/Input.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5ba822b576a4d9b9de25f8ab4781e1a31e00/30/ff12b4ee/GUIContent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5ba822b576a4d9b9de25f8ab4781e1a31e00/4b/f94dfcc1/GUIUtility.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5ba822b576a4d9b9de25f8ab4781e1a31e00/91/24beb2c8/Event.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ce25f60185214755aecd20f4c928c90e1eae00/7a/b416e6e7/Component.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d538cd2ab03641b2bea3e2d4a386a62e35000/47/e12eabfe/StateMachineBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d538cd2ab03641b2bea3e2d4a386a62e35000/49/628cc3d7/Animator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@265bc324f310/Runtime/XR/XRPass.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@2626908b593c/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@2626908b593c/Shaders/2D/Sprite-Lit-Default.shader" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@ad30dfd93d36/Runtime/UGUI/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -77,7 +95,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Navigation__Enemies&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -86,7 +104,19 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
+    <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Desktop/Draw-Out Build\My project.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="D:\Desktop\Draw-Out Build" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="ENV_FILE_PATHS" value="" />
+      <option name="REDIRECT_INPUT_PATH" value="" />
+      <option name="PTY_MODE" value="Auto" />
+      <option name="MIXED_MODE_DEBUG" value="0" />
+      <method v="2" />
+    </configuration>
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="D:\UNITY\6000.1.14f1\Editor\Unity.exe" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath &quot;D:\Unity projects\Draw-Out\My project&quot; -debugCodeOptimization" />
@@ -111,13 +141,15 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13852">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="13852" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list />
+        <list>
+          <MonoRuntime />
+        </list>
       </option>
       <option name="selectedOptions">
         <list />
@@ -144,10 +176,10 @@
     </configuration>
     <configuration name="Unity.exe (My project)" type="UnityPlayer" factoryName="UnityAttachToPlayer" temporary="true">
       <option name="host" value="127.0.0.1" />
-      <option name="pid" value="19768" />
+      <option name="pid" value="10160" />
       <option name="playerId" value="Editor(Unity.exe-My project)" />
       <option name="playerInstanceId" value="My project" />
-      <option name="port" value="56768" />
+      <option name="port" value="56160" />
       <option name="projectName" value="My project" />
       <method v="2" />
     </configuration>
@@ -167,12 +199,18 @@
       <workItem from="1757175733581" duration="9649000" />
       <workItem from="1757197180484" duration="5004000" />
       <workItem from="1757245192913" duration="9671000" />
+      <workItem from="1757609551309" duration="1264000" />
+      <workItem from="1757611294776" duration="8876000" />
+      <workItem from="1757704828536" duration="4756000" />
+      <workItem from="1757777892654" duration="9267000" />
+      <workItem from="1757851795364" duration="28546000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />
@@ -221,6 +259,19 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/spellAttacks.cs</url>
+          <line>55</line>
+          <properties documentPath="D:\Unity projects\Draw-Out\My project\Assets\Scripts\spellAttacks.cs" containingFunctionPresentation="Method 'FiveStarAttack'">
+            <startOffsets>
+              <option value="1378" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1419" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
