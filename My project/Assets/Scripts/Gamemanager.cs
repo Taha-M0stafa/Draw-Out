@@ -8,12 +8,11 @@ public class Gamemanager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     public static Gamemanager instance;
     [SerializeField] string[] LevelNames;
-    [SerializeField] GameObject Player;
+   
     public GameObject Portalspawnpoint;
     public GameObject enemySpawner;
     [SerializeField] GameObject Portal;
-    public GameObject PlayerSpawnpoint;
-    public int Enemycount;      
+       public int Enemycount;      
       private bool Hasnoenemy=false;
       private bool portal_spawned = false;
       GameObject port;
@@ -23,8 +22,7 @@ public class Gamemanager : MonoBehaviour
         port = null;
         portal_spawned = false;
         //GetEnemycount();
-        GetPLayerSpawnpoint();
-        Instantiate(Player, PlayerSpawnpoint.transform.position, Quaternion.identity);
+      
         enemySpawner.GetComponent<spawnEnemy>().InvokeSpawnEnemy();
         Instantiate(enemySpawner, transform.position, Quaternion.identity);
         enemySpawner.GetComponent<spawnEnemy>().InvokeSpawnEnemy();  
@@ -100,10 +98,7 @@ public class Gamemanager : MonoBehaviour
     {
         Portalspawnpoint = GameObject.FindGameObjectWithTag("Portalspawnpoint");
     }
-    void GetPLayerSpawnpoint()
-    {
-        PlayerSpawnpoint = GameObject.FindGameObjectWithTag("PlayerSpawnpoint");
-    }
+   
     void GetEnemycount()
     {
         Enemycount = GameObject.FindGameObjectsWithTag("Enemy").Length;
