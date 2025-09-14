@@ -15,7 +15,7 @@ public class Inventory : MonoBehaviour
         
     }
     
-    void AddItem(ItemSO item)
+     public   void AddItem(ItemSO item)
     {
         Slot slot = slots.FirstOrDefault(s => s.item == item);
         if (slot != null)
