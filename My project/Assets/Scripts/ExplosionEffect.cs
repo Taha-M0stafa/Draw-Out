@@ -5,7 +5,7 @@ public class ExplosionEffect : StateMachineBehaviour
     
     override public void OnStateEnter(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
-        
+        Debug.Log("Started");
     }
 
 
@@ -17,6 +17,7 @@ public class ExplosionEffect : StateMachineBehaviour
 
     override public void OnStateExit(Animator animator, AnimatorStateInfo stateInfo, int layerIndex)
     {
+        Debug.Log("Exited");
         Destroy(animator.gameObject);
     }
     

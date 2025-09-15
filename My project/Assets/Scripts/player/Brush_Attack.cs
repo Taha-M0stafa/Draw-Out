@@ -13,11 +13,15 @@ public class Brush_Attack : MonoBehaviour
     private CapsuleCollider2D childCapsuleCollider;
     private SpriteRenderer childSpriteRenderer;
 
-
+    AudioSource  audioSource;
+    public AudioClip clip;
+    
+    
     void Start()
     {
         childSpriteRenderer = GetComponentInChildren<SpriteRenderer>();
         childCapsuleCollider = GetComponentInChildren<CapsuleCollider2D>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     // Update is called once per frame
@@ -37,6 +41,7 @@ public class Brush_Attack : MonoBehaviour
                 Vector3 objectScale = transform.localScale;
                 Vector3 targetScale = new Vector3(1.6f, 0.5f, 1);
                 float scaleRate = 0.8f;
+                audioSource.PlayOneShot(clip, 1f);
                 StartCoroutine(PhaseThreeAttack(objectScale,targetScale, scaleRate));
             }
         }
@@ -44,6 +49,7 @@ public class Brush_Attack : MonoBehaviour
 
     private IEnumerator PhaseThreeAttack(Vector3 minimumScale, Vector3 maximumScale,float scaleRate)
     {
+        //Extend the attack
         hasAttacked = true;
         float originalScaleRate = scaleRate;
         Vector3 originalScale = transform.localScale;
@@ -57,6 +63,7 @@ public class Brush_Attack : MonoBehaviour
         }
         yield return new WaitForSeconds(0.1f);
         
+        //Shrink back to original
         scaleRate = originalScaleRate;
         while (newScale.x > minimumScale.x)
         {
@@ -65,6 +72,7 @@ public class Brush_Attack : MonoBehaviour
             transform.localScale = newScale;
             yield return null;
         }
+        //Hide the weapon
         childSpriteRenderer.enabled = false;
         childCapsuleCollider.enabled = false;
         yield return new WaitForSeconds(0.6f);

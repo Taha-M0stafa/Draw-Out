@@ -99,7 +99,7 @@ namespace PDollarGestureRecognizer
 					currentGestureLineRenderer.SetPosition(vertexCount - 1, drawPoint);
 				}
 				
-				if (Input.GetKeyDown(KeyCode.L)) //Mouse is released
+				if (Input.GetMouseButtonUp(0)) //Mouse is released
 				{
 					if (times_called == 0)
 					{

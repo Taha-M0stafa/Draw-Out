@@ -1,35 +1,87 @@
 using System;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class fireBallAttack : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     private Rigidbody2D rb;
-    private const float SPEED = 300f;
+    private const float SPEED = 3000f;
     private float damage = 3.5f;
     public GameObject explosion;
-    void Start()
+    
+    public AudioClip impact;
+    AudioSource audioSource;
+
+    private Vector3[] Directions;
+    public DIRECTION direction;
+    
+    private float deathTime = 2f;
+    void Awake()
     {
+        audioSource = GetComponent<AudioSource>();
         rb = GetComponent<Rigidbody2D>();
+        Directions = new Vector3[4];
+        Directions[0] = new Vector3(0, -1, 0);
+        Directions[1] = new Vector3(1, 0, 0);
+        Directions[2] = new Vector3(0, 1, 0);
+        Directions[3] = new Vector3(-1, 0, 0);
     }
 
+    public enum DIRECTION
+    {
+        DOWN = 0,
+        RIGHT = 1,
+        UP =2,
+        LEFT = 3,
+    }
+    
     // Update is called once per frame
     void Update()
     {
-        rb.linearVelocity = transform.forward * (SPEED * Time.deltaTime);
+       
+        deathTime -= Time.deltaTime;
+        if (deathTime <= 0)
+        {
+            Destroy(gameObject);
+        }
     }
 
+    public void moveFireBall(DIRECTION dir)
+    {
+        try
+        {
+            rb.linearVelocity = Directions[(int)dir] * (SPEED * Time.deltaTime);
+        }
+        catch (NullReferenceException e)
+        {
+            Debug.Log(e);
+            throw;
+        }
+    }
+    
+    public void moveFireBall(int dir)
+    {
+        try
+        {
+            rb.linearVelocity = Directions[dir] * (SPEED * Time.deltaTime);
+        }
+        catch (NullReferenceException e)
+        {
+            Debug.Log(e);
+            throw;
+        }
+    }
+    
     private void OnTriggerEnter2D(Collider2D other)
     {
         if(other.gameObject.CompareTag("Enemy"))
         {
             dealDamageToEnemy(other.gameObject.GetComponent<meleeEnemies>());
-            Debug.Log("hit");
+            Destroy(this.gameObject);
         }
-        Debug.Log(" hit not the enemy ");
+       
     }
-
-
     
     private void dealDamageToEnemy(meleeEnemies enemy)
     {
@@ -39,8 +91,18 @@ public class fireBallAttack : MonoBehaviour
 
     private void PlayExplosionEffect(meleeEnemies enemy)
     {
-        Debug.Log("Uhh exploded");
-        Instantiate(explosion, enemy.gameObject.transform);
+        try
+        {
+            var explosionEffect = Instantiate(explosion, enemy.gameObject.transform) as GameObject;
+            explosionEffect.transform.position += new Vector3(0, 0.5f, 0);
+            explosionEffect.transform.localScale = new Vector3(2, 2, 2);
+            audioSource.Play();
+        }
+        catch (Exception e)
+        {
+            Console.WriteLine(e);
+            throw;
+        }
     }
     
 }

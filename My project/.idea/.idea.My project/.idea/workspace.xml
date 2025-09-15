@@ -6,40 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="d6a2fed0-e080-4cf8-afd4-b5216dbc969f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (31).prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Blackthornprod/100 Fantasy Characters Pack/Prefabs/Character (31).prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scene.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scene/Demo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scene/Demo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scene/DemoSettings.lighting" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scene/DemoSettings.lighting.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scripts/Demo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PDollar/Scripts/Demo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel art Menu package (5 sets)/round color/ pin.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel art Menu package (5 sets)/round color/ pin.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Idle.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Idle.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/Player.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/Player.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/forward-walk-anim-ezgif.com-optipng.png.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/forward-walk-anim-ezgif.com-optipng.png.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Player/walking_anim.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Player/walking_anim.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/RPGW_Caves/Scenes.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/RPGW_Caves/Scenes/Demo.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/RPGW_Caves/Scenes/Demo.unity.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/RPGW_Caves/Scenes/sky___pixel_art_by_freak_ops_demqf5b-fullview.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/RPGW_Caves/Scenes/sky___pixel_art_by_freak_ops_demqf5b-fullview.jpg.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Animations/IdleVFX.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Animations/IdleVFX.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Animations/VFX_Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Animations/VFX_Controller.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Demo Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Demo Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Electricity/ElectricLightning01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Electricity/ElectricLightning01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Explosion/Explosion_003.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Explosion/Explosion_003.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/UI Scenes/Main Menu V01.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/UI Scenes/Main Menu V01.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/charMovement.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/charMovement.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/followPlayer.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/followPlayer.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/meleeEnemies.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerHealth.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/playerHealth.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ExplosionEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ExplosionEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/fireBallAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/fireBallAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/player/Brush_Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/player/Brush_Attack.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/spellAttacks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/spellAttacks.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Fonts/Pixelify_Sans/PixelifySans-VariableFont_wght SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Fonts/Pixelify_Sans/PixelifySans-VariableFont_wght SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/FireBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/FireBall.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/manifest.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/manifest.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Packages/packages-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Packages/packages-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/NavMeshAreas.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/TagManager.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +38,6 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="HighlightingSettingsPerFile">
-    <setting file="mock:///Immediate Window" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2cebce6db8b34c6cabb849a9c012f5e43e400/5c/030a3006/Graph.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4ae50e093b6e42d3b4ec42b8ca793dac46ae00/7d/bcdaab63/Array.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/4ae50e093b6e42d3b4ec42b8ca793dac46ae00/d9/be65c38a/List`1.cs" root0="FORCE_HIGHLIGHTING" />
@@ -141,15 +120,13 @@
       <option name="MIXED_MODE_DEBUG" value="0" />
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="13852">
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" value="13852" />
+      <option name="pid" />
       <option name="projectPathOnTarget" />
       <option name="runtimes">
-        <list>
-          <MonoRuntime />
-        </list>
+        <list />
       </option>
       <option name="selectedOptions">
         <list />
@@ -203,7 +180,9 @@
       <workItem from="1757611294776" duration="8876000" />
       <workItem from="1757704828536" duration="4756000" />
       <workItem from="1757777892654" duration="9267000" />
-      <workItem from="1757851795364" duration="28546000" />
+      <workItem from="1757851795364" duration="29853000" />
+      <workItem from="1757943054484" duration="854000" />
+      <workItem from="1757949077508" duration="5891000" />
     </task>
     <servers />
   </component>

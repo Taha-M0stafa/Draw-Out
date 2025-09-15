@@ -12,7 +12,8 @@ namespace spellSystem
         private float spellDamage;
 
         public GameObject fireBall;
-        
+
+        public GameObject electricity;
         
         private int enemyLayerMask = 1<< 3;
         
@@ -57,6 +58,9 @@ namespace spellSystem
                 {
                     meleeEnemies enemyStat = enemy.gameObject.GetComponent<meleeEnemies>();
                     enemyStat.setHealth(enemyStat.getHealth() - spellDamage);
+                    var electricityClone = Instantiate(electricity, enemy.gameObject.transform);
+                    electricityClone.transform.position += new Vector3(0, 0.5f, 0);
+                    electricityClone.transform.localScale = new Vector3(2,4,1);
                     ps.GetComponent<particleScript>().DamagedParticleEffect(enemyStat.gameObject.transform);
                 }
             }
@@ -78,7 +82,11 @@ namespace spellSystem
 
         private void TriangleAttack()
         {
-            var fireballClone = Instantiate(fireBall, transform.position, Quaternion.Euler(new Vector3(0, 1 ,0)));
+            for(int x = 0; x < 4 ; x++)
+            {
+                var fireballClone = Instantiate(fireBall, transform.position , Quaternion.Euler(new Vector3(0,0, 90*x)));
+                fireballClone.GetComponent<fireBallAttack>().moveFireBall(x);
+            }
         }
         
         private void RectangleAttack()
