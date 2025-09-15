@@ -1,0 +1,22 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 03cd806407d895e459fceab10c483567, type: 3}
+  m_Name: HolyGrail
+  m_EditorClassIdentifier: 
+  Itemname: HolyGrail
+  Itemicon: {fileID: 21300000, guid: 9fcbc72cc11f23745a08db2c1dd30e71, type: 3}
+  Itemdescription: ' sacrifices half  of  the player''s blood  and mana  to  deal
+    great damage  to enemies and  bosses)'
+  Itemtype: Relic
+  Itemprice: 5
+  Itemprefab: {fileID: 766844108628310373, guid: 00749f8df6c010c4598e87319cfba500, type: 3}
+  IsrogueItem: 0

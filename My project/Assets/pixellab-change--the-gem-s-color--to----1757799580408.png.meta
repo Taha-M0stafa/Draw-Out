@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-guid: a066e0ac0e4cd1c46a12358f9729b01d
-AssetOrigin:
-  serializedVersion: 1
-  productId: 222143
-  packageName: 100 Fantasy Characters Mega Pack
-  packageVersion: 1.0
-  assetPath: Assets/Blackthornprod/100 Fantasy Characters Pack/Sprites/bg9.png
-  uploadId: 505976
+guid: 9fcbc72cc11f23745a08db2c1dd30e71
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 3058210085293110878
+    second: pixellab-change--the-gem-s-color--to----1757799580408_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -52,10 +48,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,14 +68,14 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
-    textureCompression: 1
+    textureCompression: 0
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -102,7 +98,29 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: pixellab-change--the-gem-s-color--to----1757799580408_0
+      rect:
+        serializedVersion: 2
+        x: 29
+        y: 7
+        width: 67
+        height: 115
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e56b9669ed1f07a20800000000000000
+      internalID: 3058210085293110878
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -116,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pixellab-change--the-gem-s-color--to----1757799580408_0: 3058210085293110878
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

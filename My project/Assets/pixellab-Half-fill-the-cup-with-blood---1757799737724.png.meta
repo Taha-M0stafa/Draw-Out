@@ -1,14 +1,10 @@
 fileFormatVersion: 2
-guid: a066e0ac0e4cd1c46a12358f9729b01d
-AssetOrigin:
-  serializedVersion: 1
-  productId: 222143
-  packageName: 100 Fantasy Characters Mega Pack
-  packageVersion: 1.0
-  assetPath: Assets/Blackthornprod/100 Fantasy Characters Pack/Sprites/bg9.png
-  uploadId: 505976
+guid: 7810251442e624c46a355b9df0b1554f
 TextureImporter:
-  internalIDToNameTable: []
+  internalIDToNameTable:
+  - first:
+      213: 7207821578926228825
+    second: pixellab-Half-fill-the-cup-with-blood---1757799737724_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -41,7 +37,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -55,7 +51,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,7 +68,7 @@ TextureImporter:
   ignorePngGamma: 0
   applyGammaDecoding: 0
   swizzle: 50462976
-  cookieLightType: 1
+  cookieLightType: 0
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
@@ -102,7 +98,29 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: pixellab-Half-fill-the-cup-with-blood---1757799737724_0
+      rect:
+        serializedVersion: 2
+        x: 28
+        y: 7
+        width: 68
+        height: 114
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9550b409983570460800000000000000
+      internalID: 7207821578926228825
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     customData: 
     physicsShape: []
@@ -116,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      pixellab-Half-fill-the-cup-with-blood---1757799737724_0: 7207821578926228825
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
