@@ -38,7 +38,7 @@ public class UiManager : MonoBehaviour
     public playerHealth playerHP;
 
     //public bool playerLost = false;
-    void Start()
+    void Awake()
     {
         healthValue = hpSlider.GetComponent<Slider>();
         player = GameObject.FindWithTag("Player");
@@ -67,7 +67,7 @@ public class UiManager : MonoBehaviour
     }
     public void OnLose() //enable game over screen
     {
-        if (playerHP.getHealth() == healthValue.minValue)
+        if (playerHP.getHealth() <= healthValue.minValue)
         {
             //playerLost = true;
             gameOverScreen.SetActive(true);

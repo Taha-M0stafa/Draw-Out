@@ -6,20 +6,21 @@
   <component name="ChangeListManager">
     <list default="true" id="d6a2fed0-e080-4cf8-afd4-b5216dbc969f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scripts/Demo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PDollar/Scripts/Demo.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Animations/IdleVFX.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Animations/IdleVFX.anim" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Animations/VFX_Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Animations/VFX_Controller.controller" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Demo Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Demo Canvas.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Electricity/ElectricLightning01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Electricity/ElectricLightning01.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Explosion/Explosion_003.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Explosion/Explosion_003.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ExplosionEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ExplosionEffect.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/fireBallAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/fireBallAttack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/player/Brush_Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/player/Brush_Attack.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/spellAttacks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/spellAttacks.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Particle System.prefab" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Particle System.prefab.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Resources/Tiles/art hall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Resources/Tiles/art hall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/Lshapedroom.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/Lshapedroom.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/lockedspacewithfallinglass.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/lockedspacewithfallinglass.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/skybatlle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/skybatlle.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/skypuzzle.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/skypuzzle.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/player/playerHealth.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/player/playerHealth.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Settings/Lit2DSceneTemplate.scenetemplate" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Settings/Lit2DSceneTemplate.scenetemplate" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Fonts/JazzCreate/JazzCreateBubble SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Fonts/JazzCreate/JazzCreateBubble SDF.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Fonts/Pixelify_Sans/PixelifySans-VariableFont_wght SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Fonts/Pixelify_Sans/PixelifySans-VariableFont_wght SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/FireBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/FireBall.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Assets/New Scene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/New Scene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Scripts/UiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Scripts/UiManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/UI Assets/UI final/UI.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/UI final/UI.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,7 +75,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;Navigation__Enemies&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -183,6 +184,7 @@
       <workItem from="1757851795364" duration="29853000" />
       <workItem from="1757943054484" duration="854000" />
       <workItem from="1757949077508" duration="5891000" />
+      <workItem from="1757957365777" duration="657000" />
     </task>
     <servers />
   </component>
@@ -243,10 +245,10 @@
           <line>55</line>
           <properties documentPath="D:\Unity projects\Draw-Out\My project\Assets\Scripts\spellAttacks.cs" containingFunctionPresentation="Method 'FiveStarAttack'">
             <startOffsets>
-              <option value="1378" />
+              <option value="1391" />
             </startOffsets>
             <endOffsets>
-              <option value="1419" />
+              <option value="1392" />
             </endOffsets>
           </properties>
           <option name="timeStamp" value="4" />

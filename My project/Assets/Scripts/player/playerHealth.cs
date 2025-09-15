@@ -4,7 +4,7 @@ public class playerHealth : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    private float health = 5f;
+    private float health = 10f;
     
     void Start()
     {
