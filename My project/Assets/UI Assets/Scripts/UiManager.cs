@@ -32,10 +32,18 @@ public class UiManager : MonoBehaviour
     public bool ability4Ready = true;
     public bool ability4Used = false;
 
+
+
+    public GameObject player;
+    public playerHealth playerHP;
+
     //public bool playerLost = false;
     void Start()
     {
         healthValue = hpSlider.GetComponent<Slider>();
+        player = GameObject.FindWithTag("Player");
+        playerHP = player.GetComponent<playerHealth>();
+        healthValue.maxValue = playerHP.getHealth();
     }
     void Update()
     {
@@ -55,15 +63,21 @@ public class UiManager : MonoBehaviour
         }
         //enable game-over screen
         OnLose();
+        UpdateHealth();
     }
     public void OnLose() //enable game over screen
     {
-        if (healthValue.value == healthValue.minValue)
+        if (playerHP.getHealth() == healthValue.minValue)
         {
             //playerLost = true;
             gameOverScreen.SetActive(true);
             Time.timeScale = 0f;
         }
+    }
+    public void UpdateHealth()
+    {
+        healthValue.value = playerHP.getHealth();
+        Debug.Log(playerHP.getHealth());
     }
     public void OnResumePress() //when resume is pressed on the pause menu
     {
