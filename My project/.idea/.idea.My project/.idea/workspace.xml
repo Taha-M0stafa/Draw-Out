@@ -6,12 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="d6a2fed0-e080-4cf8-afd4-b5216dbc969f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.My project/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/hall.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/hall.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Gamemanager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Gamemanager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Fonts/JazzCreate/JazzCreateBubble SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Fonts/JazzCreate/JazzCreateBubble SDF.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/PDollar/Scripts/Demo.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/PDollar/Scripts/Demo.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Animations/IdleVFX.anim" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Animations/IdleVFX.anim" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Animations/VFX_Controller.controller" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Animations/VFX_Controller.controller" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Demo Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Demo Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Electricity/ElectricLightning01.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Electricity/ElectricLightning01.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Explosion/Explosion_003.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Pixel Art/PixelArtRPGVFXLite/Prefabs/Explosion/Explosion_003.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/ExplosionEffect.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/ExplosionEffect.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/fireBallAttack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/fireBallAttack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/player/Brush_Attack.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/player/Brush_Attack.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/spellAttacks.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/spellAttacks.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Fonts/Pixelify_Sans/PixelifySans-VariableFont_wght SDF.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Fonts/Pixelify_Sans/PixelifySans-VariableFont_wght SDF.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Scripts/UiManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Scripts/UiManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/UI Assets/Scripts/UiManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/UI Assets/Scripts/UiManager.cs.meta" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/FireBall.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/FireBall.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/prefabs/Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/prefabs/Player.prefab" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,15 +44,19 @@
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5073738c7a0c40f6874835e59c0cfe789e5600/2e/31f66496/EditorCompilationInterface.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/5073738c7a0c40f6874835e59c0cfe789e5600/90/9348eb31/EditorApplication.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/9d2f564c4eed4a90bb0e96c187775d6e9000/8b/7ab27fa3/Input.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5ba822b576a4d9b9de25f8ab4781e1a31e00/30/ff12b4ee/GUIContent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5ba822b576a4d9b9de25f8ab4781e1a31e00/4b/f94dfcc1/GUIUtility.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/b5ba822b576a4d9b9de25f8ab4781e1a31e00/91/24beb2c8/Event.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/ce25f60185214755aecd20f4c928c90e1eae00/7a/b416e6e7/Component.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d538cd2ab03641b2bea3e2d4a386a62e35000/47/e12eabfe/StateMachineBehaviour.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/d538cd2ab03641b2bea3e2d4a386a62e35000/49/628cc3d7/Animator.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.core@265bc324f310/Runtime/XR/XRPass.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@2626908b593c/Runtime/UniversalRenderPipeline.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@2626908b593c/Shaders/2D/Sprite-Lit-Default.shader" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@ad30dfd93d36/Runtime/UGUI/UI/Core/Image.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
+  <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 8
 }</component>
@@ -62,7 +74,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;Navigation__Enemies&quot;,
     &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -71,7 +83,7 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor">
+  <component name="RunManager" selected="Attach to Unity Editor.Attach to Unity Editor &amp; Play">
     <configuration name="Standalone Player" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="$PROJECT_DIR$/../../../Desktop/Draw-Out Build\My project.exe" />
       <option name="PROGRAM_PARAMETERS" value="" />
@@ -141,10 +153,10 @@
     </configuration>
     <configuration name="Unity.exe (My project)" type="UnityPlayer" factoryName="UnityAttachToPlayer" temporary="true">
       <option name="host" value="127.0.0.1" />
-      <option name="pid" value="19768" />
+      <option name="pid" value="10160" />
       <option name="playerId" value="Editor(Unity.exe-My project)" />
       <option name="playerInstanceId" value="My project" />
-      <option name="port" value="56768" />
+      <option name="port" value="56160" />
       <option name="projectName" value="My project" />
       <method v="2" />
     </configuration>
@@ -164,13 +176,20 @@
       <workItem from="1757175733581" duration="9649000" />
       <workItem from="1757197180484" duration="5004000" />
       <workItem from="1757245192913" duration="9671000" />
-      <workItem from="1757956460070" duration="296000" />
+      <workItem from="1757609551309" duration="1264000" />
+      <workItem from="1757611294776" duration="8876000" />
+      <workItem from="1757704828536" duration="4756000" />
+      <workItem from="1757777892654" duration="9267000" />
+      <workItem from="1757851795364" duration="29853000" />
+      <workItem from="1757943054484" duration="854000" />
+      <workItem from="1757949077508" duration="5891000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="UnityCheckinConfiguration" checkUnsavedScenes="true" />
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
   <component name="UnityProjectDiscoverer">
     <option name="hasUnityReference" value="true" />
@@ -219,6 +238,19 @@
           <properties exception="System.Threading.ThreadAbortException" breakIfHandledByOtherCode="false" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="3" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Assets/Scripts/spellAttacks.cs</url>
+          <line>55</line>
+          <properties documentPath="D:\Unity projects\Draw-Out\My project\Assets\Scripts\spellAttacks.cs" containingFunctionPresentation="Method 'FiveStarAttack'">
+            <startOffsets>
+              <option value="1378" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1419" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>

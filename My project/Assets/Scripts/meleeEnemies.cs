@@ -17,11 +17,12 @@ public class meleeEnemies : MonoBehaviour
 
     private float health = 10f;
     private float damage = 1f;
-    private bool isAttacking = false;
+    private bool canMove = true;
     
     private STATE state = STATE.IDLE;
     private Animator m_Animator;
     private Rigidbody2D rb;
+    private bool isAttacking = false;
     
     
     private Vector3 moveDirection = Vector3.zero;
@@ -89,7 +90,7 @@ public class meleeEnemies : MonoBehaviour
     {
         rotateLeftAndRight();
 
-        if (Vector3.Distance(transform.position, player.transform.position) > 0.5f)
+        if (Vector3.Distance(transform.position, player.transform.position) > 0.5f && canMove)
         {
             Vector3 direction = (player.transform.position - transform.position).normalized;
             moveDirection = direction * (SPEED * Time.deltaTime);
@@ -121,13 +122,10 @@ public class meleeEnemies : MonoBehaviour
         playerHealth.setHealth(playerHealth.getHealth() - damage);
         damagedParticleEffect.GetComponent<particleScript>().DamagedParticleEffect(player.transform);
     }
-
-
     
-
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("Player"))
+        if (other.CompareTag("playerHitBox"))
         {
             attackFunction();
         }
@@ -146,6 +144,21 @@ public class meleeEnemies : MonoBehaviour
     private void Die()
     {
         Destroy(this.gameObject);
+    }
+
+    public void setCanMove(bool canMove)
+    {
+        this.canMove = canMove;
+    }
+
+    public bool getCanMove()
+    {
+        return canMove;
+    }
+
+    public Rigidbody2D getRb()
+    {
+        return rb;
     }
     
 }
