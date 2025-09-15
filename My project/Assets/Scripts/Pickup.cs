@@ -1,20 +1,22 @@
+using Unity.VisualScripting;
 using UnityEngine;
 
 public class Pickup : MonoBehaviour
 {   public string itemName; // assign in prefab (e.g. "Potion")
-
-    ItemDataBase ItemDataBase;
+      [SerializeField] private ItemDataBase itemdatabase;
+     ItemSO item;
+   // reference to the ItemSO scriptable object
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player"))
         {
-            var item = ItemDataBase.GetItemByName(itemName);
 
-            if (item != null)
-            {
-                Inventory.instance.AddItem(item);
-                Destroy(gameObject);
-            }
+                item = itemdatabase.GetItemByName(itemName);
+
+                    
+            Inventory.instance.AddItem(item);
+            Destroy(gameObject);
+
         }
     }
     void Start()

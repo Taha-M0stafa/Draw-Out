@@ -18,4 +18,5 @@ MonoBehaviour:
     great damage  to enemies and  bosses)'
   Itemtype: Relic
   Itemprice: 5
+  Itemprefab: {fileID: 766844108628310373, guid: 00749f8df6c010c4598e87319cfba500, type: 3}
   IsrogueItem: 0

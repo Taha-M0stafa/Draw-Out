@@ -1,13 +1,15 @@
+using System.ComponentModel.Design;
 using UnityEngine;
 
 public class Holygraileffect : MonoBehaviour
 {
-    public ParticleSystem ps;
+    
     private float spellDamage = 5f;
 
    GameObject [] meleeEnemies;
-    [SerializeField] private KeyCode abilityKey = KeyCode.F;
-        [SerializeField] private float cooldownTime = 25f;    
+
+[SerializeField] private float cooldownTime = 10f;
+
     private float cooldownTimer = 0f;
 
     
@@ -16,6 +18,12 @@ public class Holygraileffect : MonoBehaviour
     
     public void UseAbility()
     {
+        Inventory checkinv = Inventory.instance;
+        if (!checkinv.slots.Exists(s => s.item.Itemname == "HolyGrail"))
+        {
+            Debug.Log("You don't have the Holygrail");
+            return;
+        }
         GetEnemy();
         PlayerManager.instance.Currhealth = PlayerManager.instance.Currhealth / 2;
         PlayerManager.instance.Currmana = PlayerManager.instance.Currmana / 2;
@@ -23,7 +31,8 @@ public class Holygraileffect : MonoBehaviour
         {
             meleeEnemies healthValue = enemy.GetComponent<meleeEnemies>();
             healthValue.setHealth(healthValue.getHealth() - spellDamage);
-            ps.GetComponent<particleScript>().DamagedParticleEffect(enemy.transform);
+            
+            Debug.Log("Enemy hit for: " + spellDamage);
         }
     }
     void Start()
@@ -40,11 +49,13 @@ public class Holygraileffect : MonoBehaviour
             cooldownTimer -= Time.deltaTime;
         }
 
-        
-        if (Input.GetKeyDown(abilityKey) && cooldownTimer <= 0)
+              
+        if (Input.GetKeyDown(KeyCode.F)&& cooldownTimer <= 0)
         {
             UseAbility();
-            cooldownTimer = cooldownTime; 
+            cooldownTimer = cooldownTime;
+            Debug.Log("Ability used, cooldown started.");
+            Debug.Log("Current Health: " + PlayerManager.instance.Currhealth);
         }
     }
     void GetEnemy()

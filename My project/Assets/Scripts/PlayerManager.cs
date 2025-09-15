@@ -5,8 +5,7 @@ using UnityEngine.SceneManagement;
 public class PlayerManager : MonoBehaviour
 {
 
-
-    static public PlayerManager instance;
+       static public PlayerManager instance;
     public GameObject PlayerSpawnpoint;
     public int Currhealth = 100;
     public int Maxhealth = 100;
@@ -25,12 +24,17 @@ public class PlayerManager : MonoBehaviour
         else
         {
             Destroy(gameObject);
+            Debug.Log("PlayerManager already exists, destroying duplicate!");
         }
     }
 
 
     void Start()
     {
+        SceneManager.sceneLoaded += OnSceneloaded;
+        GetPLayerSpawnpoint();
+        
+         Instantiate(Player, PlayerSpawnpoint.transform.position, Quaternion.identity);
 
     }
 
@@ -39,7 +43,7 @@ public class PlayerManager : MonoBehaviour
     {
 
     }
-    void OnSceneloaded(Scene scene, LoadSceneMode mode)
+     public void OnSceneloaded(Scene scene, LoadSceneMode mode)
     {
         GetPLayerSpawnpoint();
 
@@ -49,8 +53,12 @@ public class PlayerManager : MonoBehaviour
 
 
     }
-     void GetPLayerSpawnpoint()
+    void GetPLayerSpawnpoint()
     {
         PlayerSpawnpoint = GameObject.FindGameObjectWithTag("PlayerSpawnpoint");
+        if (PlayerSpawnpoint == null)
+        {
+            Debug.LogError("No PlayerSpawnpoint found in the scene. Please add one with the 'PlayerSpawnpoint' tag.");
+        }
     }
 }
