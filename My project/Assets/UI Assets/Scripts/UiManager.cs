@@ -77,7 +77,6 @@ public class UiManager : MonoBehaviour
     public void UpdateHealth()
     {
         healthValue.value = playerHP.getHealth();
-        Debug.Log(playerHP.getHealth());
     }
     public void OnResumePress() //when resume is pressed on the pause menu
     {
