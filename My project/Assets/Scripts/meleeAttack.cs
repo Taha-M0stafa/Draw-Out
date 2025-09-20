@@ -7,13 +7,13 @@ public class meleeAttack : MonoBehaviour
     private float damage = 1f;
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     void attackMelee(float damage)
@@ -25,7 +25,15 @@ public class meleeAttack : MonoBehaviour
     {
         if (other.CompareTag("Player"))
         {
-           attackMelee(damage);
+            attackMelee(damage);
         }
+    }
+    public float GetMeleeDamage()
+    {
+        return damage;
+    }
+    public void SetMeleeDamage(float damage)
+    {
+        this.damage = damage;
     }
 }

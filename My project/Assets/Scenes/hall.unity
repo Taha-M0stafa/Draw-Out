@@ -16403,6 +16403,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7031729604421ce4994c2ce19bdcb2de, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  Roomcounter: 0
   LevelNames:
   - hall
   - Lshapedroom
@@ -20303,6 +20304,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1234802428}
   - component: {fileID: 1234802427}
+  - component: {fileID: 1234802429}
   m_Layer: 0
   m_Name: Inventory
   m_TagString: Untagged
@@ -20338,6 +20340,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1234802429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1234802426}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d36609eff9e91948b8eb67423065ae7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cooldownTime: 25
 --- !u!1 &1286068925
 GameObject:
   m_ObjectHideFlags: 0
@@ -20414,7 +20429,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 9
+  m_SortingOrder: 3
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16

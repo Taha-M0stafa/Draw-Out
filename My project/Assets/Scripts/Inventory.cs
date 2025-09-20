@@ -5,6 +5,10 @@ using UnityEngine;
 public class Inventory : MonoBehaviour
 {
     ItemDataBase ItemDataBase;
+    static public Inventory instance;
+    public List<Slot> slots = new List<Slot>();
+    public List<Slot> Ugradeslots = new List<Slot>();
+
     void Discard(ItemSO item)
     {
         Slot slot = slots.FirstOrDefault(s => s.item == item);
@@ -12,10 +16,10 @@ public class Inventory : MonoBehaviour
         {
             slots.Remove(slot);
         }
-        
+
     }
-    
-     public   void AddItem(ItemSO item)
+
+    public void AddItem(ItemSO item)
     {
         Slot slot = slots.FirstOrDefault(s => s.item == item);
         if (slot != null)
@@ -28,7 +32,7 @@ public class Inventory : MonoBehaviour
         }
     }
 
-   public void UseOnce(ItemSO item)
+    public void UseOnce(ItemSO item)
     {
         Slot slot = slots.FirstOrDefault(s => s.item == item);
         if (slot != null)
@@ -41,10 +45,9 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    static public Inventory instance;
-    public List<Slot> slots = new List<Slot>();
+
     private void Awake()
-    { 
+    {
         if (instance == null)
         {
             instance = this;
@@ -60,14 +63,31 @@ public class Inventory : MonoBehaviour
 
     }
 
-        void Start()
+    void Start()
     {
-        
+
+    }
+    public void Addupgrade(UpgradeSO upgrade)
+    {
+        Slot slot = Ugradeslots.FirstOrDefault(s => s.upgrade == upgrade);
+        if (slot != null)
+        {
+            slot.amount++;
+        }
+        else
+        {
+            Ugradeslots.Add(new Slot(upgrade, 1));
+        }
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+
+    }
+    public void ResetInventory()
+    {
+        slots.Clear();
+        Ugradeslots.Clear();
     }
 }

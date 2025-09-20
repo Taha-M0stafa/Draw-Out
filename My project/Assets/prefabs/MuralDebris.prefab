@@ -147,4 +147,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 50d7ca019a516644b8001f63e649843b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: 'Muraldebris '
+  itemdatabase: {fileID: 11400000, guid: 44d8f8a8cf93ccb4f8e7d9e93e94a37e, type: 2}

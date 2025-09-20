@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Itemname: small health potion
   Itemicon: {fileID: 0}
-  Itemdescription: 'health 25% of current max health '
+  Itemdescription: 'heals 25% of current max health '
   Itemtype: 'Consumable '
   Itemprice: 0
+  Itemprefab: {fileID: 0}
   IsrogueItem: 0

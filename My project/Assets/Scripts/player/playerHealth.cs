@@ -5,13 +5,14 @@ public class playerHealth : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
     private float health = 5f;
-    
+     private float Maxhealth = 5f;
+
     void Start()
     {
-        
+
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         gameOver();
@@ -31,8 +32,30 @@ public class playerHealth : MonoBehaviour
     {
         if (health <= 0)
         {
-            
+            Upgradesystem resetUpgrades = GetComponent<Upgradesystem>();
+            resetUpgrades.removeupgrades();
+            Inventory resetInventory = Inventory.instance;
+            resetInventory.ResetInventory();
         }
     }
+
+   
+
+
+
+    public float GetMaxHealth()
+    {
+        return Maxhealth;
+    }
+
+    public void SetMaxHealth(float Maxhealth)
+    {
+        this.Maxhealth = Maxhealth;
+    }
+    
+
+
+
+    
     
 }

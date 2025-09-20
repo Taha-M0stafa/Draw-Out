@@ -1,0 +1,455 @@
+fileFormatVersion: 2
+guid: b5ac1579788cb244c99192d92ab4d116
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6903614677556818422
+    second: pixellab-A-chipped--fragmented-section--1758315719830_0
+  - first:
+      213: 8988601576026929609
+    second: pixellab-A-chipped--fragmented-section--1758315719830_1
+  - first:
+      213: 6144986177132472893
+    second: pixellab-A-chipped--fragmented-section--1758315719830_2
+  - first:
+      213: 984575190530342860
+    second: pixellab-A-chipped--fragmented-section--1758315719830_3
+  - first:
+      213: 9192567385468891057
+    second: pixellab-A-chipped--fragmented-section--1758315719830_4
+  - first:
+      213: 7231699801067473850
+    second: pixellab-A-chipped--fragmented-section--1758315719830_5
+  - first:
+      213: -4009589535224743716
+    second: pixellab-A-chipped--fragmented-section--1758315719830_6
+  - first:
+      213: 858465263161845663
+    second: pixellab-A-chipped--fragmented-section--1758315719830_7
+  - first:
+      213: -2197534061840958016
+    second: pixellab-A-chipped--fragmented-section--1758315719830_8
+  - first:
+      213: 6742321330421665056
+    second: pixellab-A-chipped--fragmented-section--1758315719830_9
+  - first:
+      213: -9062064524675796105
+    second: pixellab-A-chipped--fragmented-section--1758315719830_10
+  - first:
+      213: -2670775894478812966
+    second: pixellab-A-chipped--fragmented-section--1758315719830_11
+  - first:
+      213: -5963836305281294662
+    second: pixellab-A-chipped--fragmented-section--1758315719830_12
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 64
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_0
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 113
+        width: 17
+        height: 30
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6f172f9e8f09ecf50800000000000000
+      internalID: 6903614677556818422
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_1
+      rect:
+        serializedVersion: 2
+        x: 78
+        y: 128
+        width: 19
+        height: 58
+      alignment: 9
+      pivot: {x: 0.56637174, y: 0.510802}
+      border: {x: 0, y: 0, z: 1, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9c9f99e728dedbc70800000000000000
+      internalID: 8988601576026929609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_2
+      rect:
+        serializedVersion: 2
+        x: 99
+        y: 120
+        width: 26
+        height: 66
+      alignment: 9
+      pivot: {x: 0.24688427, y: 0.60208464}
+      border: {x: 1, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d3aaaadde50674550800000000000000
+      internalID: 6144986177132472893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_3
+      rect:
+        serializedVersion: 2
+        x: 117
+        y: 109
+        width: 21
+        height: 66
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ccf39365be9e9ad00800000000000000
+      internalID: 984575190530342860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_4
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 98
+        width: 25
+        height: 52
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1bfe6b0355f829f70800000000000000
+      internalID: 9192567385468891057
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_5
+      rect:
+        serializedVersion: 2
+        x: 41
+        y: 30
+        width: 10
+        height: 12
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abbc3e467a82c5460800000000000000
+      internalID: 7231699801067473850
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_6
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 13
+        width: 112
+        height: 107
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd83ec9bf831b58c0800000000000000
+      internalID: -4009589535224743716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_7
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 33
+        width: 18
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f9726c6cb91e9eb00800000000000000
+      internalID: 858465263161845663
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_8
+      rect:
+        serializedVersion: 2
+        x: 153
+        y: 20
+        width: 11
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0cdf52ee96ac081e0800000000000000
+      internalID: -2197534061840958016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_9
+      rect:
+        serializedVersion: 2
+        x: 33
+        y: 18
+        width: 11
+        height: 7
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 02d82551789819d50800000000000000
+      internalID: 6742321330421665056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_10
+      rect:
+        serializedVersion: 2
+        x: 50
+        y: 17
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 773b703e3541d3280800000000000000
+      internalID: -9062064524675796105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_11
+      rect:
+        serializedVersion: 2
+        x: 111
+        y: 14
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad80aee697f7fead0800000000000000
+      internalID: -2670775894478812966
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pixellab-A-chipped--fragmented-section--1758315719830_12
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 14
+        width: 8
+        height: 6
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: abe51256a723c3da0800000000000000
+      internalID: -5963836305281294662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: 3d5000df22934454982fc926d17eec7e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries: []
+    nameFileIdTable:
+      pixellab-A-chipped--fragmented-section--1758315719830_0: 6903614677556818422
+      pixellab-A-chipped--fragmented-section--1758315719830_1: 8988601576026929609
+      pixellab-A-chipped--fragmented-section--1758315719830_10: -9062064524675796105
+      pixellab-A-chipped--fragmented-section--1758315719830_11: -2670775894478812966
+      pixellab-A-chipped--fragmented-section--1758315719830_12: -5963836305281294662
+      pixellab-A-chipped--fragmented-section--1758315719830_2: 6144986177132472893
+      pixellab-A-chipped--fragmented-section--1758315719830_3: 984575190530342860
+      pixellab-A-chipped--fragmented-section--1758315719830_4: 9192567385468891057
+      pixellab-A-chipped--fragmented-section--1758315719830_5: 7231699801067473850
+      pixellab-A-chipped--fragmented-section--1758315719830_6: -4009589535224743716
+      pixellab-A-chipped--fragmented-section--1758315719830_7: 858465263161845663
+      pixellab-A-chipped--fragmented-section--1758315719830_8: -2197534061840958016
+      pixellab-A-chipped--fragmented-section--1758315719830_9: 6742321330421665056
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
