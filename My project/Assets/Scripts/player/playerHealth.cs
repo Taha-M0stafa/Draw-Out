@@ -6,9 +6,15 @@ public class playerHealth : MonoBehaviour
 
     private float health = 5f;
      private float Maxhealth = 5f;
+     Inventory inventory;
 
     void Start()
     {
+        inventory = Inventory.instance;
+        if (inventory == null)
+        {
+            Debug.LogError("Inventory component not found on the GameObject.");
+        }
 
     }
 
@@ -32,10 +38,15 @@ public class playerHealth : MonoBehaviour
     {
         if (health <= 0)
         {
-            Upgradesystem resetUpgrades = GetComponent<Upgradesystem>();
+            Debug.Log("Game Over");
+            Upgradesystem resetUpgrades = inventory.GetComponent<Upgradesystem>();
+            Debug.Log("Game Over1");
             resetUpgrades.removeupgrades();
+            Debug.Log("Game Over2");
             Inventory resetInventory = Inventory.instance;
+            Debug.Log("Game Over3");
             resetInventory.ResetInventory();
+            Debug.Log("Game Over4");
         }
     }
 

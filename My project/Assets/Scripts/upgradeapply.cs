@@ -10,11 +10,20 @@ public class Upgradesystem : MonoBehaviour
 
     Upgradedatabase upgradedatabase;
     Inventory inventory;
+      public GameObject player;
       playerHealth playerHealth;
     spellAttacks spellAttacks;
     fireBallAttack fireBallAttack;
     Holygraileffect holyGrailEffect;
     meleeAttack meleeAttack;
+    void Start()
+    {
+        playerHealth = player.GetComponent<playerHealth>();
+        spellAttacks = player.GetComponent<spellAttacks>();
+        fireBallAttack =player. GetComponent<fireBallAttack>();
+        holyGrailEffect = inventory.GetComponent<Holygraileffect>();
+        meleeAttack = player.GetComponent<meleeAttack>();
+    }
     void Awake()
     {
         upgradedatabase = Resources.Load<Upgradedatabase>("Upgradedatabase");
@@ -27,11 +36,7 @@ public class Upgradesystem : MonoBehaviour
         {
             Debug.LogError("Inventory component not found on the GameObject.");
         }
-        playerHealth = GetComponent<playerHealth>();
-        spellAttacks = GetComponent<spellAttacks>();
-        fireBallAttack = GetComponent<fireBallAttack>();
-        holyGrailEffect = GetComponent<Holygraileffect>();
-        meleeAttack = GetComponent<meleeAttack>();
+    
 
         
     }
@@ -65,7 +70,7 @@ public class Upgradesystem : MonoBehaviour
                     Debug.Log("Applying weapon upgrade: " + upgrade.Upgradename);
                     break;
                 case "Healthstatboost":
-                    playerHealth = GetComponent<playerHealth>();
+                    
                     playerHealth.SetMaxHealth(playerHealth.GetMaxHealth() + upgrade.Upgradeamount);
                     inventory.Addupgrade(upgrade);
                     Debug.Log("Applying stat upgrade: " + upgrade.Upgradename);
@@ -122,17 +127,17 @@ public class Upgradesystem : MonoBehaviour
     {
         
             Debug.Log("Clearing upgrades from inventory");
-            playerHealth = GetComponent<playerHealth>();
+        
         
             playerHealth.SetMaxHealth(5);
-            spellAttacks = GetComponent<spellAttacks>();
+         
             spellAttacks.SetFivestarattackDamage(3);
-            holyGrailEffect = GetComponent<Holygraileffect>();
+           
             holyGrailEffect.SetHealthCost(0.5f);
             holyGrailEffect.SetSpellDamage(5);
-            meleeAttack = GetComponent<meleeAttack>();
+          
             meleeAttack.SetMeleeDamage(1);
-            fireBallAttack = GetComponent<fireBallAttack>();
+           
             fireBallAttack.setDamage(3.5f);
             Debug.Log("Upgrades removed");
        
