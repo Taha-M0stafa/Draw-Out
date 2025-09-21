@@ -11,7 +11,7 @@ namespace spellSystem
         // Start is called once before the first execution of Update after the MonoBehaviour is created
         public ParticleSystem ps;
         private float cooldown = 3f;
-        private float spellDamage;
+        private float spellDamage = 3f;
 
         public GameObject fireBall;
 
@@ -28,6 +28,7 @@ namespace spellSystem
         void Start()
         {
             mana = GameObject.FindWithTag("ManaOrb").GetComponent<ManaManagement>();
+
         }
 
         // Update is called once per frame
@@ -69,7 +70,7 @@ namespace spellSystem
 
         void FiveStarAttack()
         {
-            spellDamage = 3f;
+
             float sphereRadius = 12f;
             Collider2D[] enemeyStats = Physics2D.OverlapCircleAll(transform.position, sphereRadius, enemyLayerMask);
             if (enemeyStats.Length > 0)
@@ -128,5 +129,15 @@ namespace spellSystem
         }
 
 
+        public void SetFivestarattackDamage(float damage)
+        {
+            spellDamage = damage;
+        }
+        public float getSpellDamage()
+        {
+            return spellDamage;
+        }
+        
     }
+    
 }

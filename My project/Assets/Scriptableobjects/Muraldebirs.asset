@@ -12,9 +12,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 03cd806407d895e459fceab10c483567, type: 3}
   m_Name: Muraldebirs
   m_EditorClassIdentifier: 
-  Itemname: 'Mural debris '
+  Itemname: 'Muraldebris '
   Itemicon: {fileID: 0}
   Itemdescription: Debris of the Sistine Chapel
   Itemtype: 'enhancementstone '
   Itemprice: 0
+  Itemprefab: {fileID: 0}
   IsrogueItem: 0

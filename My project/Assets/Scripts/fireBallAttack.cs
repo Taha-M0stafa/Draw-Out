@@ -9,13 +9,13 @@ public class fireBallAttack : MonoBehaviour
     private const float SPEED = 3000f;
     private float damage = 3.5f;
     public GameObject explosion;
-    
+
     public AudioClip impact;
     AudioSource audioSource;
 
     private Vector3[] Directions;
     public DIRECTION direction;
-    
+
     private float deathTime = 2f;
     void Awake()
     {
@@ -32,14 +32,14 @@ public class fireBallAttack : MonoBehaviour
     {
         DOWN = 0,
         RIGHT = 1,
-        UP =2,
+        UP = 2,
         LEFT = 3,
     }
-    
+
     // Update is called once per frame
     void Update()
     {
-       
+
         deathTime -= Time.deltaTime;
         if (deathTime <= 0)
         {
@@ -59,7 +59,7 @@ public class fireBallAttack : MonoBehaviour
             throw;
         }
     }
-    
+
     public void moveFireBall(int dir)
     {
         try
@@ -72,17 +72,17 @@ public class fireBallAttack : MonoBehaviour
             throw;
         }
     }
-    
+
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if(other.gameObject.CompareTag("Enemy"))
+        if (other.gameObject.CompareTag("Enemy"))
         {
             dealDamageToEnemy(other.gameObject.GetComponent<meleeEnemies>());
             Destroy(this.gameObject);
         }
-       
+
     }
-    
+
     private void dealDamageToEnemy(meleeEnemies enemy)
     {
         enemy.setHealth(enemy.getHealth() - damage);
@@ -103,6 +103,14 @@ public class fireBallAttack : MonoBehaviour
             Console.WriteLine(e);
             throw;
         }
+    }
+    public void setDamage(float newDamage)
+    {
+        damage = newDamage;
+    }
+    public float getDamage()
+    {
+        return damage;
     }
     
 }
