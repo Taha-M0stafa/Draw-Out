@@ -13,6 +13,21 @@ TagManager:
   - Fireball
   - ManaOrb
   - Inventory
+  - Fivestarattackspellldamageboost
+  - Undefined
+  - spellldamageboost
+  - holyhealthupgrade
+  - holydamageupgrade
+  - weaponstatboost
+  - traingeldamageboost
+  - Healthboost
+  - Triangleattacksoelllboost
+  - Meleeattackboost
+  - Healthstatboost
+  - FiveStar
+  - HealthBoost
+  - TBoost
+  - MeleeAttackBoost
   layers:
   - Default
   - TransparentFX

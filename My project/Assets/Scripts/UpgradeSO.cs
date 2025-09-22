@@ -7,20 +7,25 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "UpgradeSO", menuName = "Scriptable Objects/UpgradeSO")]
 public class UpgradeSO : ScriptableObject
 {
-   
+
      public string Upgradename;
      public Sprite Upgradeicon;
      public string UpgradeTypes; //Statboost forn now
      public string Upgradedescription;
-      
-      public float Upgradeamount;
-    
 
-    public int Upgradeprice;
-     
-     
+     public float Upgradeamount;
+
+
+     public int Upgradeprice;
+
+
      public bool IsrogueUpgrade;
-     
+     public string tag;
+     public string GetTag()
+     {
+          return tag;
+     }
+
      public void printUpgrade()
      {
           Debug.Log("Upgrade name: " + Upgradename + "\n" +
@@ -28,6 +33,7 @@ public class UpgradeSO : ScriptableObject
                     "Upgrade type: " + UpgradeTypes + "\n" +
                     "Upgrade price: " + Upgradeprice + "\n" +
                     "Is rogue Upgrade: " + IsrogueUpgrade);
-     } 
+     }
+      
     
 }

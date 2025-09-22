@@ -8,9 +8,9 @@ public class Upgradedatabase : ScriptableObject
 
      public UpgradeSO [] Upgrade;
 
-    private Dictionary<string,  UpgradeSO > Upgradelookup;
+    public Dictionary<string,  UpgradeSO > Upgradelookup;
 
-    private void OnEnable()
+    public void OnEnable()
     {
         Upgradelookup = new Dictionary<string, UpgradeSO>();
         foreach (UpgradeSO upgrade  in Upgrade)

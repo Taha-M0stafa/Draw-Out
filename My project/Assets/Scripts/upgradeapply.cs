@@ -8,10 +8,10 @@ public class Upgradesystem : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
 
-    Upgradedatabase upgradedatabase;
+    public Upgradedatabase upgradedatabase;
     Inventory inventory;
-      public GameObject player;
-      playerHealth playerHealth;
+    public GameObject player;
+    playerHealth playerHealth;
     spellAttacks spellAttacks;
     fireBallAttack fireBallAttack;
     Holygraileffect holyGrailEffect;

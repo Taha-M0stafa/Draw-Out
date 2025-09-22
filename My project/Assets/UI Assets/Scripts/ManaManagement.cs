@@ -19,8 +19,8 @@ public class ManaManagement : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //ManaRegen();
-        Debug.Log(manaSlider.value);
+        ManaRegen();
+        Debug.Log(manaSlider.value.ToString());
     }
     public float GetMana()
     {
@@ -33,10 +33,10 @@ public class ManaManagement : MonoBehaviour
     }
     private void ManaRegen()
     {
-        float regenAmount = 0.1f;
+        float regenAmount = 0.3f;
         if (manaSlider.value < manaSlider.maxValue)
         {
-            manaSlider.value += regenAmount;
+            manaSlider.value += regenAmount*Time.deltaTime;
         }
     }
 }

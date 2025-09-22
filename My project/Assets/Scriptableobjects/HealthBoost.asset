@@ -19,3 +19,4 @@ MonoBehaviour:
   Upgradeamount: 2
   Upgradeprice: 3
   IsrogueUpgrade: 0
+  tag: HealthBoost

@@ -12,10 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c06d2cbba8b76e24da8b2cf6040101aa, type: 3}
   m_Name: MeleeAttackboost
   m_EditorClassIdentifier: 
-  Upgradename: Meleeattackboost
+  Upgradename: MeleeAttackboost
   Upgradeicon: {fileID: 0}
   UpgradeTypes: weaponstatboost
   Upgradedescription: Increase Melee attack  damage by amount
   Upgradeamount: 1
   Upgradeprice: 2
   IsrogueUpgrade: 0
+  tag: MeleeAttackBoost
