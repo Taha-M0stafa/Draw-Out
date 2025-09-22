@@ -14,7 +14,7 @@ public class brushHitEnemy : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
 
@@ -24,5 +24,9 @@ public class brushHitEnemy : MonoBehaviour
         {
             brushPivot.dealDamage(other.gameObject, damage, 100f);
         }
+    }
+    public void setDamage(float newDamage)
+    {
+        damage = newDamage;
     }
 }

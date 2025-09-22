@@ -1,4 +1,5 @@
 using System;
+using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
@@ -7,7 +8,7 @@ public class meleeEnemies : MonoBehaviour
 {
     private static readonly int IsMoving = Animator.StringToHash("isMoving");
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-
+    public List<LootTable> lootTable= new List<LootTable>();
     private enum STATE
     {
         IDLE = 0,
@@ -15,7 +16,7 @@ public class meleeEnemies : MonoBehaviour
         ATTACKING =2,
     }
 
-    private float health = 10f;
+    private float health = 12f;
     private float damage = 1f;
     private bool canMove = true;
     
@@ -143,6 +144,16 @@ public class meleeEnemies : MonoBehaviour
 
     private void Die()
     {
+        foreach (LootTable loot in lootTable)
+        {
+            int roll = UnityEngine.Random.Range(0, 100);
+            if (roll <= loot.dropChance)
+            {
+                if (loot.itemprefab != null)
+                    Instantiate(loot.itemprefab, transform.position, Quaternion.identity);
+                break;
+            }
+        }
         Destroy(this.gameObject);
     }
 

@@ -247,6 +247,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2e176a8092646aa4085568f7def95ab1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  lootTable:
+  - itemprefab: {fileID: 9102254237506990063, guid: c644c04f3c922ea40bd65142904a4f19, type: 3}
+    dropChance: 20
   damagedParticleEffect: {fileID: 5728588738625074713, guid: 2d0fdea959c8de343931fbe9a5ba4cd4, type: 3}
 --- !u!70 &837399339129000788
 CapsuleCollider2D:

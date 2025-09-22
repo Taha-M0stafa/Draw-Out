@@ -11,6 +11,8 @@ TagManager:
   - Brush
   - playerHitBox
   - Fireball
+  - ManaOrb
+  - Inventory
   layers:
   - Default
   - TransparentFX

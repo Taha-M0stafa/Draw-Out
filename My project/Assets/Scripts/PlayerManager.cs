@@ -7,10 +7,7 @@ public class PlayerManager : MonoBehaviour
 
        static public PlayerManager instance;
     public GameObject PlayerSpawnpoint;
-    public int Currhealth = 100;
-    public int Maxhealth = 100;
-    public int Currmana = 100;
-    public int MaxMana = 100;
+   
      
 
     [SerializeField] GameObject Player;

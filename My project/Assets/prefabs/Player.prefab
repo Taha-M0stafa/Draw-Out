@@ -562,6 +562,7 @@ GameObject:
   - component: {fileID: 1819296683813729046}
   - component: {fileID: 8946299667249998069}
   - component: {fileID: 5992898433270651803}
+  - component: {fileID: 3773066623664873022}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -630,7 +631,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 2
+  m_SortingOrder: 4
   m_Sprite: {fileID: 4577510572015527331, guid: f6f0726c5609c9f4f8438e1d2e310363, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -778,6 +779,18 @@ BoxCollider2D:
   m_AutoTiling: 0
   m_Size: {x: 0.20836204, y: 0.046975642}
   m_EdgeRadius: 0
+--- !u!114 &3773066623664873022
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9176843206681061102}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb5f5d031d4314b4a847be393c70ac52, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &186919421318200277
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -788,6 +801,14 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 12120044577352601, guid: f614296c4442cba4ba5d46abfd6695bd, type: 3}
       propertyPath: isPaused
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455910986953663563, guid: f614296c4442cba4ba5d46abfd6695bd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1455910986953663563, guid: f614296c4442cba4ba5d46abfd6695bd, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2235951173399945350, guid: f614296c4442cba4ba5d46abfd6695bd, type: 3}
@@ -836,6 +857,30 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3784764683261292690, guid: f614296c4442cba4ba5d46abfd6695bd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276802286631872490, guid: f614296c4442cba4ba5d46abfd6695bd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4276802286631872490, guid: f614296c4442cba4ba5d46abfd6695bd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518214509748154164, guid: f614296c4442cba4ba5d46abfd6695bd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 5518214509748154164, guid: f614296c4442cba4ba5d46abfd6695bd, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171952276970263976, guid: f614296c4442cba4ba5d46abfd6695bd, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6171952276970263976, guid: f614296c4442cba4ba5d46abfd6695bd, type: 3}
+      propertyPath: m_AnchorMax.y
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6815339385879318885, guid: f614296c4442cba4ba5d46abfd6695bd, type: 3}

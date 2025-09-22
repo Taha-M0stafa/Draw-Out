@@ -6,23 +6,27 @@ using UnityEngine.SceneManagement;
 public class Gamemanager : MonoBehaviour
 {
     // Start is called once before the first execution of Update after the MonoBehaviour is created
+   public  int Roomcounter = 1;
     public static Gamemanager instance;
     [SerializeField] string[] LevelNames;
    
     public GameObject Portalspawnpoint;
     public GameObject enemySpawner;
     [SerializeField] GameObject Portal;
+    [SerializeField] GameObject holyGrail;
        public int Enemycount;      
       private bool Hasnoenemy=false;
       private bool portal_spawned = false;
       GameObject port;
     void OnSceneloaded(Scene scene, LoadSceneMode mode)
     {
+        
         Getportalspawnpoint();
         port = null;
         portal_spawned = false;
+         Roomcounter++;
         //GetEnemycount();
-      
+
         enemySpawner.GetComponent<spawnEnemy>().InvokeSpawnEnemy();
         Instantiate(enemySpawner, transform.position, Quaternion.identity);
         enemySpawner.GetComponent<spawnEnemy>().InvokeSpawnEnemy();  
@@ -30,7 +34,9 @@ public class Gamemanager : MonoBehaviour
     }
 
     private void Awake()
-    {
+    {  
+    
+
         if (instance == null)
         {
             instance = this;
@@ -58,6 +64,10 @@ public class Gamemanager : MonoBehaviour
 
     void Start()
     {
+        if (Roomcounter == 1)
+        {
+            Instantiate(holyGrail, new Vector3(-15,10,0), Quaternion.identity);
+        }
 
     }
 
